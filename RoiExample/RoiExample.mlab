@@ -1,0 +1,314 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "437 217 136 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "439 717 408 254"
+        sizeHint = "408 254"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = endPos
+    voxelX = 55
+    voxelY = 72
+    voxelZ = -70
+    worldX = -8.32297
+    worldY = -65.8463240163799
+    worldZ = -504.776250047723
+    voxelPos = "55 72 -70"
+    worldPos = "-8.32297 -65.8463240163799 -504.776250047723"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = TRUE
+    keepConstant = Voxel
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "397 121 136 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "443 522 408 254"
+        sizeHint = "408 254"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = startPos
+    voxelX = -54.5112152099609
+    voxelY = -8.58023548126221
+    voxelZ = -51.783561706543
+    worldX = -229.331760975494
+    worldY = -201.231822571767
+    worldZ = -358.269651038885
+    voxelPos = "-54.5112152099609 -8.58023548126221 -51.783561706543"
+    worldPos = "-229.331760975494 -201.231822571767 -358.269651038885"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = FALSE
+    keepConstant = Voxel
+  }
+}
+module View2D {
+  internal  {
+    frame = "661 37 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "603 251 400 400"
+        sizeHint = "400 400"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D1
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_Z
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    plane = "0 0.2079117000103 0.978147625923157 -507.435913085938"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 725.67499
+    lutWidth = 1277.1
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_SHORT
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = FALSE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module SubImage {
+  internal  {
+    frame = "645 181 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "942 236 578 372"
+        sizeHint = "578 372"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = TRUE
+    enableBoxClamping = FALSE
+    x = -54.5112152099609
+    sx = 55
+    modifyX = TRUE
+    y = -8.58023548126221
+    sy = 72
+    modifyY = TRUE
+    z = -51.783561706543
+    sz = -70
+    modifyZ = TRUE
+    c = 0
+    sc = 0
+    modifyC = FALSE
+    t = 0
+    st = 0
+    modifyT = TRUE
+    u = 0
+    su = 0
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelStartEnd
+    autoApply = TRUE
+  }
+}
+module SoView2DRectangle {
+  internal  {
+    frame = "193 205 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "1264 515 409 543"
+        sizeHint = "409 543"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DRectangle
+    drawingOn = TRUE
+    editingOn = TRUE
+    maskValid = FALSE
+    fixZOn = FALSE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    startWorldPos = "-54.5112152099609 -8.58023548126221 -51.783561706543"
+    endWorldPos = "55.0211143493652 72.7764739990234 -69.0764617919922"
+    blendInside = 0.2
+    blendOnto = 0.5
+    blendOutside = 0
+    lineBlendInside = 0.5
+    lineBlendOnto = 0.69999999
+    lineBlendOutside = 0
+    resetToImage = FALSE
+    selectOutside = FALSE
+    allowDrag = FALSE
+    cooperative = FALSE
+    shadeExterior = 0
+  }
+}
+module View2D {
+  internal  {
+    frame = "149 45 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "157 249 400 400"
+        sizeHint = "400 400"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 1
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_Z
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    plane = "0 0.2079117000103 0.978147625923157 -52.4358978271484"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 725.67499
+    lutWidth = 1277.1
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_SHORT
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = FALSE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module LocalImage {
+  internal  {
+    frame = "329 541 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "708 482 502 266"
+        sizeHint = "502 266"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalImage
+    name = $(DemoDataPath)/Head3_dualecho.small.dcm
+    autoLoad = TRUE
+  }
+}
+connections  {
+  endPos.input0 = LocalImage.outImage
+  endPos.worldPos = SoView2DRectangle.endWorldPos
+  startPos.input0 = LocalImage.outImage
+  startPos.worldPos = SoView2DRectangle.startWorldPos
+  View2D1.inImage = SubImage.output0
+  SubImage.input0 = LocalImage.outImage
+  SubImage.x = startPos.voxelX
+  SubImage.sx = endPos.voxelX
+  SubImage.y = startPos.voxelY
+  SubImage.sy = endPos.voxelY
+  SubImage.z = startPos.voxelZ
+  SubImage.sz = endPos.voxelZ
+  View2D.inImage = LocalImage.outImage
+  View2D.inInvPreLUT = SoView2DRectangle.self
+}
+networkModel = ""
+
+//# MeVis signature v1
+//# key: MFowDQYJKoZIhvcNAQEBBQADSQAwRgJBANEfsmYse2e1dRhkQ9AQbreCq9uxwzWLoGom13MNYmyfwoJqQOEXljLFAgw2eEjaT12G4CdqKWhRxh9ANP6n7GMCARE=:VI/mB8bT4u+mRtf/ru8yUQi8BzpaS3UeL2x62YxsUYnVqCWuLrVNLiukIIjnJMKQXlc8ezmgOIcVAV7pgvgKpQ==
+//# owner: MeVis
+//# date: 2015-09-29T20:23:28
+//# hash: N1N79DLlJBKf0QNU9Z0FRnxNWqAFzyUnFvIM40RLghu7XZ5SFz/wx9YIRd8f9P3TrkuwtoJVlOWpLcIluYAmKw==
+//# MeVis end

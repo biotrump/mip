@@ -1,0 +1,302 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module itkCannySegmentationLevelSetImageFilter {
+  internal  {
+    frame = "-107 221 264 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = itkCannySegmentationLevelSetImageFilter
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    minValue = 0
+    maxValue = 255
+    applyMinMax = FALSE
+    autoSetMinMax = TRUE
+    clampOutImageValues = FALSE
+    lowerOutSideMode = MinValue
+    upperOutSideMode = MaxValue
+    lowerOutSideValue = 0
+    upperOutSideValue = 1
+    threshold = 0
+    variance = 0
+    reverseExpansionDirection = FALSE
+    autoGenerateSpeedAdvection = TRUE
+    propagationScaling = -1
+    advectionScaling = -1
+    curvatureScaling = 1
+    useMinimalCurvature = FALSE
+    maximumCurvatureTimeStep = 0.166666666666667
+    maximumPropagationTimeStep = 0.166666666666667
+    numberOfLayers = 3
+    isoSurfaceValue = 0
+    interpolateSurfaceLocation = TRUE
+    numberOfIterations = 1000
+    useImageSpacing = TRUE
+    rMSChange = 0
+    manualReinitialization = FALSE
+    isInitialized = FALSE
+    coordinateTolerance = 1e-06
+    directionTolerance = 1e-06
+  }
+}
+module itkCurvesLevelSetImageFilter {
+  internal  {
+    frame = "313 269 192 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = itkCurvesLevelSetImageFilter
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    minValue = 0
+    maxValue = 255
+    applyMinMax = FALSE
+    autoSetMinMax = TRUE
+    clampOutImageValues = FALSE
+    lowerOutSideMode = MinValue
+    upperOutSideMode = MaxValue
+    lowerOutSideValue = 0
+    upperOutSideValue = 1
+    derivativeSigma = 1
+    reverseExpansionDirection = FALSE
+    autoGenerateSpeedAdvection = TRUE
+    featureScaling = 0
+    propagationScaling = 1
+    advectionScaling = 1
+    curvatureScaling = 1
+    useMinimalCurvature = TRUE
+    maximumCurvatureTimeStep = 0.166666666666667
+    maximumPropagationTimeStep = 0.166666666666667
+    numberOfLayers = 3
+    isoSurfaceValue = 0
+    interpolateSurfaceLocation = FALSE
+    numberOfIterations = 1000
+    useImageSpacing = TRUE
+    maximumRMSError = 0.02
+    rMSChange = 0
+    manualReinitialization = FALSE
+    isInitialized = FALSE
+    coordinateTolerance = 1e-06
+    directionTolerance = 1e-06
+  }
+}
+module itkLevelSetMotionRegistrationFilter {
+  internal  {
+    frame = "281 85 224 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = itkLevelSetMotionRegistrationFilter
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    minValue = 0
+    maxValue = 1
+    applyMinMax = FALSE
+    autoSetMinMax = TRUE
+    clampOutImageValues = FALSE
+    lowerOutSideMode = MinValue
+    upperOutSideMode = MaxValue
+    lowerOutSideValue = 0
+    upperOutSideValue = 1
+    alpha = 0
+    intensityDifferenceThreshold = 0
+    gradientMagnitudeThreshold = 0
+    gradientSmoothingStandardDeviations = 0
+    smoothDisplacementField = FALSE
+    standardDeviations = "0 0 0"
+    smoothUpdateField = FALSE
+    updateFieldStandardDeviations = "0 0 0"
+    maximumError = 0
+    maximumKernelWidth = 0
+    numberOfIterations = 0
+    useImageSpacing = FALSE
+    maximumRMSError = 0
+    rMSChange = 0
+    manualReinitialization = FALSE
+    isInitialized = FALSE
+    coordinateTolerance = 0
+    directionTolerance = 0
+  }
+}
+module itkLevelSetMotionRegistrationFunction {
+  internal  {
+    frame = "385 341 240 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = itkLevelSetMotionRegistrationFunction
+    alpha = 0
+    intensityDifferenceThreshold = 0
+    gradientMagnitudeThreshold = 0
+    gradientSmoothingStandardDeviations = 0
+    useImageSpacing = FALSE
+    energy = 0
+    gradientStep = 1
+    normalizeGradient = TRUE
+    radius = "0 0 0 0 0 0"
+    scaleCoefficients = ""
+    status = "Output is valid"
+  }
+}
+module itkReinitializeLevelSetImageFilter {
+  internal  {
+    frame = "177 309 208 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = itkReinitializeLevelSetImageFilter
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    minValue = 0
+    maxValue = 255
+    applyMinMax = FALSE
+    autoSetMinMax = TRUE
+    clampOutImageValues = FALSE
+    lowerOutSideMode = MinValue
+    upperOutSideMode = MaxValue
+    lowerOutSideValue = 0
+    upperOutSideValue = 1
+    levelSetValue = 0
+    narrowBanding = FALSE
+    inputNarrowBandwidth = 12
+    outputNarrowBandwidth = 12
+    coordinateTolerance = 1e-06
+    directionTolerance = 1e-06
+  }
+}
+module itkShapeDetectionLevelSetImageFilter {
+  internal  {
+    frame = "65 109 240 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = itkShapeDetectionLevelSetImageFilter
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    minValue = 0
+    maxValue = 255
+    applyMinMax = FALSE
+    autoSetMinMax = TRUE
+    clampOutImageValues = FALSE
+    lowerOutSideMode = MinValue
+    upperOutSideMode = MaxValue
+    lowerOutSideValue = 0
+    upperOutSideValue = 1
+    reverseExpansionDirection = FALSE
+    autoGenerateSpeedAdvection = TRUE
+    propagationScaling = 1
+    advectionScaling = 0
+    curvatureScaling = 1
+    useMinimalCurvature = FALSE
+    maximumCurvatureTimeStep = 0.166666666666667
+    maximumPropagationTimeStep = 0.166666666666667
+    numberOfLayers = 3
+    isoSurfaceValue = 0
+    interpolateSurfaceLocation = FALSE
+    numberOfIterations = 1000
+    useImageSpacing = TRUE
+    maximumRMSError = 0.02
+    rMSChange = 0
+    manualReinitialization = FALSE
+    isInitialized = FALSE
+    coordinateTolerance = 1e-06
+    directionTolerance = 1e-06
+  }
+}
+module itkThresholdSegmentationLevelSetImageFilter {
+  internal  {
+    frame = "645 269 280 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "554 31 272 897"
+        sizeHint = "272 897"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = itkThresholdSegmentationLevelSetImageFilter
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    minValue = 0
+    maxValue = 255
+    applyMinMax = FALSE
+    autoSetMinMax = TRUE
+    clampOutImageValues = FALSE
+    lowerOutSideMode = MinValue
+    upperOutSideMode = MaxValue
+    lowerOutSideValue = 0
+    upperOutSideValue = 1
+    upperThreshold = 0
+    lowerThreshold = 0
+    edgeWeight = 0
+    smoothingIterations = 5
+    smoothingTimeStep = 0.100000001490116
+    smoothingConductance = 0.800000011920929
+    reverseExpansionDirection = FALSE
+    autoGenerateSpeedAdvection = TRUE
+    featureScaling = 0
+    propagationScaling = -1
+    advectionScaling = 0
+    curvatureScaling = 1
+    useMinimalCurvature = FALSE
+    maximumCurvatureTimeStep = 0.166666666666667
+    maximumPropagationTimeStep = 0.166666666666667
+    numberOfLayers = 3
+    isoSurfaceValue = 0
+    interpolateSurfaceLocation = TRUE
+    numberOfIterations = 1000
+    useImageSpacing = TRUE
+    maximumRMSError = 0.02
+    rMSChange = 0
+    manualReinitialization = FALSE
+    isInitialized = FALSE
+    coordinateTolerance = 1e-06
+    directionTolerance = 1e-06
+  }
+}
+module itkLaplacianSegmentationLevelSetImageFilter {
+  internal  {
+    frame = "317 157 280 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = itkLaplacianSegmentationLevelSetImageFilter
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    minValue = 0
+    maxValue = 255
+    applyMinMax = FALSE
+    autoSetMinMax = TRUE
+    clampOutImageValues = FALSE
+    lowerOutSideMode = MinValue
+    upperOutSideMode = MaxValue
+    lowerOutSideValue = 0
+    upperOutSideValue = 1
+    reverseExpansionDirection = FALSE
+    autoGenerateSpeedAdvection = TRUE
+    propagationScaling = -1
+    advectionScaling = 0
+    curvatureScaling = 1
+    useMinimalCurvature = FALSE
+    maximumCurvatureTimeStep = 0.166666666666667
+    maximumPropagationTimeStep = 0.166666666666667
+    numberOfLayers = 3
+    isoSurfaceValue = 0
+    interpolateSurfaceLocation = TRUE
+    numberOfIterations = 1000
+    useImageSpacing = TRUE
+    maximumRMSError = 0.02
+    rMSChange = 0
+    manualReinitialization = FALSE
+    isInitialized = FALSE
+    coordinateTolerance = 1e-06
+    directionTolerance = 1e-06
+  }
+}
+connections = ""
+networkModel = ""

@@ -1,0 +1,20 @@
+//----------------------------------------------------------------------------------
+//! MyROISelect module definition
+/*!
+// \file    MyROISelect.def
+// \author  thomas
+// \date    2015-10-25
+*/
+//----------------------------------------------------------------------------------
+
+
+MacroModule MyROISelect {
+  genre              = ""
+  author             = "thomas"
+  comment            = ""
+  keywords           = "roi"
+  seeAlso            = ""
+  exampleNetwork     = "$(LOCAL)/networks/MyROISelectExample.mlab"
+   
+  externalDefinition = "$(LOCAL)/MyROISelect.script"
+}

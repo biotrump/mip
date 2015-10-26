@@ -1,0 +1,612 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module SoMouseGrabber {
+  internal  {
+    frame = "733 189 136 56"
+    moduleGroupName = "Anatomical Image"
+    windows  {
+      window _default {
+        geometry = "174 172 468 499"
+        sizeHint = "468 499"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMouseGrabber1
+    on = TRUE
+    normalized = FALSE
+    clamp = TRUE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = PRESSED
+    shift = IGNORED
+    ctrl = IGNORED
+    alt = RELEASED
+    cursorShape = LUT_CURSOR
+    xmin = 0
+    xmax = 1
+    ymin = 0
+    ymax = 1
+    setEventHandled = FALSE
+    setWheelEventHandled = FALSE
+    flipX = FALSE
+    flipY = TRUE
+    swapXY = FALSE
+    sensitivity = 1
+    wheelOverflow = FALSE
+    wheel = 0
+    wheelStep = 1
+    wheelMin = 0
+    wheelMax = 100
+  }
+}
+module SoMLLUT {
+  internal  {
+    frame = "797 269 88 56"
+    moduleGroupName = "Anatomical Image"
+  }
+  fields  {
+    instanceName = SoMLLUT
+    acceptExtensions = FALSE
+  }
+}
+module RampLUT {
+  internal  {
+    frame = "797 413 88 56"
+    moduleGroupName = "Anatomical Image"
+    windows  {
+      window _default {
+        geometry = "158 729 341 433"
+        sizeHint = "322 433"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = RampLUT
+    relative = TRUE
+    center = 0.5
+    width = 0.5
+    startColor = "0 0 0"
+    endColor = "1 1 1"
+    alphaCenter = 0.5
+    alphaWidth = 0.5
+    alphaStart = 0
+    alphaEnd = 1
+    useRelativeIfNoInputImage = FALSE
+    shouldComputeLUTOnEachImageChange = FALSE
+  }
+}
+module ChangeLUTColor {
+  internal  {
+    frame = "777 341 128 56"
+    moduleGroupName = "Anatomical Image"
+    windows  {
+      window _default {
+        geometry = "868 566 268 126"
+        sizeHint = "199 126"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ChangeLUTColor
+    visualType = AsInput
+    color = "1 1 1"
+    intensity = 1
+    alpha = 1
+  }
+}
+module SoTranslation {
+  internal  {
+    frame = "229 733 120 56"
+    moduleGroupName = Applicator
+    windows  {
+      window _default {
+        geometry = "819 565 281 38"
+        sizeHint = "281 38"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoTranslation2
+    translation = "0 -11 0"
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "785 109 128 56"
+    moduleGroupName = "Anatomical Image"
+  }
+  fields  {
+    instanceName = SoGroup
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "473 609 128 64"
+    moduleGroupName = Applicator
+  }
+  fields  {
+    instanceName = Applicator
+  }
+}
+module SoSeparator {
+  internal  {
+    frame = "437 37 152 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoSeparator2
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+  }
+}
+module SoScale {
+  internal  {
+    frame = "217 117 80 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "817 571 277 35"
+        sizeHint = "277 35"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoScale
+    scaleFactor = "10 5 5"
+  }
+}
+module SoGVRVolumeRenderer {
+  internal  {
+    frame = "893 257 168 64"
+    moduleGroupName = "Anatomical Image"
+    windows  {
+      window _default {
+        geometry = "743 533 437 593"
+        sizeHint = "437 593"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoGVRVolumeRenderer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    on = TRUE
+    autoLoad = TRUE
+    interactiveQuality = 0.1
+    staticQuality = 1
+    interactiveSamplingRate = 1
+    staticSamplingRate = 1
+    blendMode = Blend
+    octreeNodeSize = NODE_SIZE_32
+    octreeParentComputationMethod = Rank
+    octreeParentComputationRank = 4
+    currentTimePoint = 0
+    maxTimePoint = 0
+    force8bit = FALSE
+    filterVolumeData = FilterLinear
+    filterLut = TRUE
+    subVolumeStartX = 0
+    subVolumeStartY = 0
+    subVolumeStartZ = 0
+    subVolumeEndX = 93
+    subVolumeEndY = 93
+    subVolumeEndZ = 61
+    zbuffer = TRUE
+    permitClipping = TRUE
+    drawOnPlanes = TRUE
+    sizeOutputX = 93
+    sizeOutputY = 93
+    sizeOutputZ = 61
+    incrementalUpdate = TRUE
+    highQualityStaticUpdate = FALSE
+    staticRenderingAfterInteractionOnly = FALSE
+    adaptQualityToWindowSize = TRUE
+    rayCastTextureStorage = RayCastTextureStorage_Auto
+    renderMode = Direct
+    useImageCacheFile = FALSE
+    imageCacheFilename = ""
+    greyCenter = 0.36399999
+    greyWidth = 0.52999997
+    greyInvert = FALSE
+    alphaCenter = 0.5
+    alphaWidth = 0.5
+    alphaInvert = FALSE
+    colorFactor = "1 1 1"
+    alphaFactor = 1
+    enhancementAlphaMix = 0.25
+    boundaryEnhancement = FALSE
+    boundaryEnhancementFactor = 1
+    boundaryEnhancementExponent = 1
+    boundaryEnhancementGradientBias = 0
+    silhouetteEnhancement = FALSE
+    silhouetteEnhancementExponent = 1
+    silhouetteEnhancementFactor = 1
+    toneShading = FALSE
+    toneShadingWarmColor = "0.674509823322296 0.533333361148834 0.141176477074623"
+    toneShadingColdColor = "0 0 0.400000005960464"
+    toneShadingWarmDiffuse = 0.60000002
+    toneShadingColdDiffuse = 0.2
+    toneShadingAngle = 45
+    materialAmbient = 0.60000002
+    materialDiffuse = 1
+    materialSpecular = 1
+    materialSpecularity = 32
+    reduceLightingOnLowGradientMagnitude = FALSE
+    light1Enabled = TRUE
+    light1DiffuseIntensity = 1
+    light1SpecularIntensity = 1
+    light1Color = "1 1 1"
+    light1PolarPhi = 0
+    light1PolarRho = 0
+    light2Enabled = FALSE
+    light2DiffuseIntensity = 1
+    light2SpecularIntensity = 1
+    light2Color = "1 1 1"
+    light2PolarPhi = 45
+    light2PolarRho = 45
+    light3Enabled = FALSE
+    light3DiffuseIntensity = 1
+    light3SpecularIntensity = 1
+    light3Color = "1 1 1"
+    light3PolarPhi = -45
+    light3PolarRho = 0
+    gradientQuality = GradientQualityAutomatic
+    selectionAlphaThreshold = 0.045000002
+    selectionActive = FALSE
+    useWorldCoords = TRUE
+  }
+}
+module LocalImage {
+  internal  {
+    frame = "913 381 96 56"
+    moduleGroupName = "Anatomical Image"
+    windows  {
+      window _default {
+        geometry = "811 773 502 266"
+        sizeHint = "502 266"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalImage
+    name = $(DemoDataPath)/Liver1_CT_venous.small.dcm
+    autoLoad = TRUE
+  }
+}
+module SoTranslation {
+  internal  {
+    frame = "389 277 120 56"
+    moduleGroupName = Interaction
+    windows  {
+      window _default {
+        geometry = "1283 600 281 38"
+        sizeHint = "281 38"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoTranslation1
+    translation = "-8.49910259246826 34.3936233520508 31.4901371002197"
+  }
+}
+module SoCenterballManip {
+  internal  {
+    frame = "225 269 144 56"
+    moduleGroupName = Interaction
+    windows  {
+      window _default {
+        geometry = "1285 679 450 198"
+        sizeHint = "450 198"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "829 516 260 211"
+        sizeHint = "260 211"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCenterballManip
+    translation = "-11.5074424743652 -24.0544090270996 -52.3361663818359"
+    rotation = "0.0363444425165653 -0.162998139858246 0.985956728458405 4.43367147445679"
+    scaleFactor = "1.00000190734863 0.999998509883881 0.999999940395355"
+    scaleOrientation = "0.199536249041557 -0.889842391014099 0.41032412648201 0.536655128002167"
+    center = "-8.49910259246826 34.3936233520508 31.4901371002197"
+  }
+}
+module SoMaterial {
+  internal  {
+    frame = "317 837 104 56"
+    moduleGroupName = Applicator
+    windows  {
+      window _materialeditor {
+        geometry = "859 542 195 158"
+        sizeHint = "195 158"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial1
+    ambientColor = "0.54902 0.101961 0.156863"
+    diffuseColor = "0.8 0.243137 0.227451"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.2
+    transparency = 0
+  }
+}
+module SoSeparator {
+  internal  {
+    frame = "433 737 128 64"
+    moduleGroupName = Applicator
+  }
+  fields  {
+    instanceName = Tip
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+  }
+}
+module SoTranslation {
+  internal  {
+    frame = "425 837 112 56"
+    moduleGroupName = Applicator
+    windows  {
+      window _default {
+        geometry = "885 545 281 38"
+        sizeHint = "281 38"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoTranslation
+    translation = "0 11.5 0"
+  }
+}
+module SoCylinder {
+  internal  {
+    frame = "745 837 96 56"
+    moduleGroupName = Applicator
+    windows  {
+      window _default {
+        geometry = "873 672 118 94"
+        sizeHint = "118 94"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCylinder
+    parts = ALL
+    radius = 1
+    height = 20
+  }
+}
+module SoMaterial {
+  internal  {
+    frame = "641 837 96 56"
+    moduleGroupName = Applicator
+    windows  {
+      window _materialeditor {
+        geometry = "859 542 195 158"
+        sizeHint = "195 158"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial
+    ambientColor = "0.164706 0.219608 0.54902"
+    diffuseColor = "0.607843 0.690196 0.8"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.2
+    transparency = 0
+  }
+}
+module SoSeparator {
+  internal  {
+    frame = "685 737 104 64"
+    moduleGroupName = Applicator
+  }
+  fields  {
+    instanceName = Shaft
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+  }
+}
+module SoCone {
+  internal  {
+    frame = "545 837 80 56"
+    moduleGroupName = Applicator
+    windows  {
+      window _default {
+        geometry = "661 601 167 94"
+        sizeHint = "167 94"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCone
+    parts = ALL
+    bottomRadius = 1
+    height = 3
+  }
+}
+module SoBackground {
+  internal  {
+    frame = "309 -43 120 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoBackground
+    rotate = TRUE
+    flip = FALSE
+    on = TRUE
+    depthBuffer = TRUE
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "465 -155 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "1126 231 505 470"
+        sizeHint = "400 400"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    hiResRendering = TRUE
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_ORTHOGRAPHIC
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = FALSE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 461.0889
+    position = "-226.859130859375 -104.029876708984 -69.6459350585938"
+    orientation = "-0.766034781932831 0.446352571249008 0.46255823969841 4.7365140914917"
+    nearDistance = -231.68025
+    farDistance = 547.77301
+    focalDistance = 220.69524
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+  }
+}
+connections  {
+  SoMLLUT.inLUT = ChangeLUTColor.outLUT
+  RampLUT.center = SoMouseGrabber1.y
+  RampLUT.width = SoMouseGrabber1.x
+  RampLUT.alphaCenter = RampLUT.center
+  RampLUT.alphaWidth = RampLUT.width
+  ChangeLUTColor.inLUT = RampLUT.outLUT
+  SoGroup.children = "SoMouseGrabber1.self SoMLLUT.self SoGVRVolumeRenderer.self"
+  Applicator.children = "SoTranslation2.self Tip.self Shaft.self"
+  SoSeparator2.children = "SoScale.self SoCenterballManip.self SoTranslation1.self Applicator.self"
+  SoGVRVolumeRenderer.image = LocalImage.outImage
+  SoTranslation1.translation = SoCenterballManip.center
+  Tip.children = "SoMaterial1.self SoTranslation.self SoCone.self"
+  Shaft.children = "SoMaterial.self SoCylinder.self"
+  SoExaminerViewer.children = "SoBackground.self SoSeparator2.self SoGroup.self"
+}
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 48
+        objectName = Applicator
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 82
+        objectName = Interaction
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 115
+        objectName = "Anatomical Image"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+    }
+  }
+}
+
+//# MeVis signature v1
+//# key: MFowDQYJKoZIhvcNAQEBBQADSQAwRgJBANEfsmYse2e1dRhkQ9AQbreCq9uxwzWLoGom13MNYmyfwoJqQOEXljLFAgw2eEjaT12G4CdqKWhRxh9ANP6n7GMCARE=:VI/mB8bT4u+mRtf/ru8yUQi8BzpaS3UeL2x62YxsUYnVqCWuLrVNLiukIIjnJMKQXlc8ezmgOIcVAV7pgvgKpQ==
+//# owner: MeVis
+//# date: 2015-09-29T20:23:28
+//# hash: CwuV7mWqgDQgLEdhD4QURkrGv8+vRJFcvq2MpmG44giJGJ6iYYVYdB480MV2MOFHcrzVQ/G1P6ibEVmt4IY7xw==
+//# MeVis end

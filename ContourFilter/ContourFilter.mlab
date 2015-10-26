@@ -1,0 +1,288 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module SyncFloat {
+  internal  {
+    frame = "793 77 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "625 665 128 88"
+        sizeHint = "120 88"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SyncFloat
+    float1 = 0
+    float2 = 0
+    epsilon = 9.9999997e-05
+  }
+}
+module View2D {
+  internal  {
+    frame = "937 141 80 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "704 218 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "808 350 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "2277 432 268 394"
+        sizeHint = "268 394"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D1
+    inventorInputOn = FALSE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_Z
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 61.0437507629395
+    lutWidth = 157.231201171875
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = FALSE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module Arithmetic2 {
+  internal  {
+    frame = "929 285 96 56"
+    moduleGroupName = Filter
+    windows  {
+      window _default {
+        geometry = "184 248 310 88"
+        sizeHint = "310 88"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic2
+    function = Subtract
+    outputImageSize = AdaptOutputImageSize
+    constant = 0
+    autoReplicate = FALSE
+  }
+}
+module Morphology {
+  internal  {
+    frame = "897 389 96 56"
+    moduleGroupName = Filter
+    windows  {
+      window _default {
+        geometry = "242 124 281 468"
+        sizeHint = "281 468"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Morphology
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    filterMode = Dilation
+    kernelX = 3
+    kernelY = 3
+    kernelZ = 3
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = FALSE
+    intervalMinOfFilteredVoxels = 0
+    intervalMaxOfFilteredVoxels = 1024
+    useIntervalOfFilteredVoxels = FALSE
+    intervalMinOfVoxelsForFiltering = 0
+    intervalMaxOfVoxelsForFiltering = 1024
+    useIntervalOfVoxelsForFiltering = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
+  }
+}
+module Convolution {
+  internal  {
+    frame = "969 501 96 56"
+    moduleGroupName = Filter
+    windows  {
+      window _default {
+        geometry = "242 277 281 170"
+        sizeHint = "281 170"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Convolution
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    intervalMinOfFilteredVoxels = 0
+    intervalMaxOfFilteredVoxels = 1024
+    useIntervalOfFilteredVoxels = FALSE
+    externalKernel = ""
+    predefKernel = "3x3 Average Kernel"
+  }
+}
+module LocalImage {
+  internal  {
+    frame = "809 629 99 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "450 345 480 138"
+        sizeHint = "480 138"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalImage
+    name = D:/edu/ntu/mip/exercise/out_112.bmp
+    autoLoad = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "776 149 77 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "55 306 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "81 401 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "1825 444 268 394"
+        sizeHint = "268 394"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D
+    inventorInputOn = FALSE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_Z
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 61.0437507629395
+    lutWidth = 100
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = FALSE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+connections  {
+  SyncFloat.float1 = View2D1.startSlice
+  View2D1.inImage = Arithmetic2.output0
+  View2D1.startSlice = View2D.startSlice
+  Arithmetic2.input0 = Morphology.output0
+  Arithmetic2.input1 = Convolution.output0
+  Morphology.input0 = Convolution.output0
+  Convolution.input0 = LocalImage.outImage
+  View2D.inImage = LocalImage.outImage
+  View2D.startSlice = SyncFloat.float2
+}
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 15
+        objectName = Filter
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+    }
+  }
+}

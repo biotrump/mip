@@ -1,0 +1,12 @@
+// MDL v1 utf8
+wizard = PackageWizard
+fields  {
+  instanceName = wizard
+  packageName = General
+  packageGroup = MyPackageGroup
+  packageOwner = thomas
+  packageDescription = ""
+  addMasterBuilderFiles = FALSE
+  targetDir = D:/edu/ntu/mip/exercise
+  createEnable = TRUE
+}

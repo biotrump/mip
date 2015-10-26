@@ -1,0 +1,345 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module View2D {
+  internal  {
+    frame = "569 25 224 64"
+    moduleGroupName = ""
+    windows  {
+      window Settings {
+        geometry = "577 165 291 367"
+        sizeHint = "291 367"
+        wasOpen = no
+      }
+      window _default {
+        geometry = "437 224 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MarkerImageForSwitchIndex2
+    inventorInputOn = FALSE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_Z
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 2047.5
+    lutWidth = 4095
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = FALSE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "617 273 144 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "359 235 354 359"
+        sizeHint = "354 359"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThresh
+    lowerType = ImgMin
+    innerType = ImgOrig
+    upperType = ImgMin
+    centerWidthSet = FALSE
+    threshCenter = 2547.5
+    threshWidth = 3095
+    threshMin = 1000
+    threshMax = 4095
+    lowerUserValue = 0
+    innerUserValue = 0
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = -100000
+    changedMax = 100000
+  }
+}
+module Switch {
+  internal  {
+    frame = "425 181 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "55 428 220 66"
+        sizeHint = "220 66"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Switch
+    currentInput = 0
+    numberOfInputs = 5
+  }
+}
+module MinMaxScan {
+  internal  {
+    frame = "441 117 112 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = MinMaxScan
+    updateMode = AutoUpdate
+    typeSelect = "Proposed Data Type"
+    preferredIntType = PreferUnsigned
+  }
+}
+module Resample3D {
+  internal  {
+    frame = "113 333 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "539 257 305 314"
+        sizeHint = "303 314"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Resample3D
+    keep = "Scale factor"
+    filter = Lanczos_3
+    isotropic = FALSE
+    filterAlways = FALSE
+    filterAlwaysTolerance = 0
+    zoom = "1 1 0.0625"
+    imageSize = "456 312 0"
+    voxelSize = "0.352777777777778 0.352777777777778 16"
+    subVoxelShift = "0 0 0"
+    useReferenceImage = FALSE
+  }
+}
+module View2D {
+  internal  {
+    frame = "449 25 80 64"
+    moduleGroupName = ""
+    windows  {
+      window Settings {
+        geometry = "577 165 278 378"
+        sizeHint = "278 378"
+        wasOpen = no
+      }
+      window _default {
+        geometry = "858 217 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Result
+    inventorInputOn = FALSE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_Z
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 371.5
+    lutWidth = 741
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = FALSE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "93 57 152 64"
+    moduleGroupName = ""
+    windows  {
+      window Settings {
+        geometry = "180 199 291 367"
+        sizeHint = "291 367"
+        wasOpen = no
+      }
+      window _default {
+        geometry = "57 117 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ResampledOriginal
+    inventorInputOn = FALSE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_Z
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = FALSE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 255
+    lutWidth = 255
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = FALSE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module itkWatershedImageFilter {
+  internal  {
+    frame = "301 253 184 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "195 218 233 314"
+        sizeHint = "233 314"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = itkWatershedImageFilter
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    minValue = 0
+    maxValue = 4095
+    applyMinMax = FALSE
+    autoSetMinMax = TRUE
+    clampOutImageValues = FALSE
+    lowerOutSideMode = MinValue
+    upperOutSideMode = MaxValue
+    lowerOutSideValue = 0
+    upperOutSideValue = 1
+    threshold = 0.02
+    level = 0.02
+    coordinateTolerance = 1e-06
+    directionTolerance = 1e-06
+  }
+}
+module LocalImage {
+  internal  {
+    frame = "113 421 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "450 345 480 138"
+        sizeHint = "480 138"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalImage
+    name = D:/edu/ntu/mip/exercise/out_112.bmp
+    autoLoad = TRUE
+  }
+}
+connections  {
+  MarkerImageForSwitchIndex2.inImage = IntervalThresh.output0
+  IntervalThresh.input0 = Resample3D.output0
+  Switch.input0 = itkWatershedImageFilter.output0
+  MinMaxScan.input0 = Switch.output0
+  Resample3D.input0 = LocalImage.outImage
+  Result.inImage = MinMaxScan.output0
+  ResampledOriginal.inImage = Resample3D.output0
+  itkWatershedImageFilter.input0 = Resample3D.output0
+}
+networkModel = ""

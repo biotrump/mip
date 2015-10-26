@@ -1,0 +1,165 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "510 304 136 64"
+    moduleGroupName = roi_select
+    windows  {
+      window _default {
+        geometry = "439 717 408 254"
+        sizeHint = "408 254"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = endPos
+    voxelX = 130
+    voxelY = 102
+    voxelZ = 0
+    worldX = 130.805709838867
+    worldY = 102.775917053223
+    worldZ = 0.5
+    voxelPos = "130 102 0"
+    worldPos = "130.805709838867 102.775917053223 0.5"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = TRUE
+    keepConstant = Voxel
+  }
+}
+module WorldVoxelConvert {
+  internal  {
+    frame = "494 208 136 64"
+    moduleGroupName = roi_select
+    windows  {
+      window _default {
+        geometry = "425 347 439 224"
+        sizeHint = "439 224"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = startPos
+    voxelX = 55.6533660888672
+    voxelY = 15.4367027282715
+    voxelZ = 0.5
+    worldX = 55.6533660888672
+    worldY = 15.4367027282715
+    worldZ = 0.5
+    voxelPos = "55.6533660888672 15.4367027282715 0.5"
+    worldPos = "55.6533660888672 15.4367027282715 0.5"
+    voxelMode = TRUE
+    worldMode = FALSE
+    intVoxelCoords = FALSE
+    keepConstant = Voxel
+  }
+}
+module SubImage {
+  internal  {
+    frame = "718 268 88 56"
+    moduleGroupName = roi_select
+    windows  {
+      window _default {
+        geometry = "942 236 578 372"
+        sizeHint = "578 372"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = TRUE
+    enableBoxClamping = FALSE
+    x = 55.6533660888672
+    sx = 130
+    modifyX = TRUE
+    y = 15.4367027282715
+    sy = 102
+    modifyY = TRUE
+    z = 0.5
+    sz = 0
+    modifyZ = TRUE
+    c = 0
+    sc = 0
+    modifyC = FALSE
+    t = 0
+    st = 0
+    modifyT = TRUE
+    u = 0
+    su = 0
+    modifyU = FALSE
+    fillValue = 0
+    mode = VoxelStartEnd
+    autoApply = TRUE
+  }
+}
+module SoView2DRectangle {
+  internal  {
+    frame = "306 300 144 56"
+    moduleGroupName = roi_select
+    windows  {
+      window _default {
+        geometry = "413 148 411 505"
+        sizeHint = "411 505"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DRectangle
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = FALSE
+    color = "0.333333343267441 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    startWorldPos = "55.6533660888672 15.4367027282715 0.5"
+    endWorldPos = "130.805709838867 102.775917053223 0.5"
+    blendInside = 0.2
+    blendOnto = 0.30000001
+    blendOutside = 0
+    lineBlendInside = 0.5
+    lineBlendOnto = 0.69999999
+    lineBlendOutside = 0
+    resetToImage = FALSE
+    selectOutside = FALSE
+    allowDrag = TRUE
+    cooperative = FALSE
+    shadeExterior = 0
+    shadeAllExterior = FALSE
+    lineStyle = SOLID
+  }
+}
+connections  {
+  endPos.worldPos = SoView2DRectangle.endWorldPos
+  startPos.worldPos = SoView2DRectangle.startWorldPos
+  SubImage.x = startPos.voxelX
+  SubImage.sx = endPos.voxelX
+  SubImage.y = startPos.voxelY
+  SubImage.sy = endPos.voxelY
+  SubImage.z = startPos.voxelZ
+  SubImage.sz = endPos.voxelZ
+}
+networkModel = ""
