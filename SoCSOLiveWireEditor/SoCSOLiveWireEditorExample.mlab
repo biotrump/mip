@@ -2,10 +2,1034 @@
 network  {
   watchlist = ""
 }
+module CSOSave {
+  internal  {
+    frame = "1377 805 96 56"
+    moduleGroupName = CSOSave
+    windows  {
+      window _default {
+        geometry = "423 1197 533 173"
+        sizeHint = "533 173"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOSave1
+    taskVerboseLogging = FALSE
+    fileName = /home/thomas/MIP/ntu_mip/exercise/SoCSOLiveWireEditor/exercise-itk-isoloated-watershed.cso
+    autoApply = TRUE
+    saveSuccess = TRUE
+    binary = TRUE
+    listenToFinishedNotifications = FALSE
+  }
+}
+module View2D {
+  internal  {
+    frame = "1405 613 120 56"
+    moduleGroupName = CSOSave
+    windows  {
+      window _default {
+        geometry = "1407 1172 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "507 165 253 545"
+        sizeHint = "234 545"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D1
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_Z
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 127.5
+    lutWidth = 255
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_HIDE
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module CSOManager {
+  internal  {
+    frame = "1473 725 112 56"
+    moduleGroupName = CSOSave
+    windows  {
+      window _default {
+        geometry = "227 854 811 602"
+        sizeHint = "811 602"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CSOManager3
+    workDirectlyOnInputCSOList = FALSE
+    updateCsoDisplayTree = TRUE
+    updateGroupDisplayTree = TRUE
+    selectLastCreatedGroup = TRUE
+    selectionColoringMode = SelectionColorModeFixed
+    selectionLineWidthMode = SelectionLineWidthWiden
+    selectionBrightenColor = 0.2
+    selectionFixedColor = "1 0 0"
+    selectionWidenLineWidth = 7
+    selectionFixedLineWidth = 2
+    selectedSeedPointColoringMode = SelectedSeedPointColorModeFixed
+    selectedSeedPointSizeMode = SelectedSeedPointSizeModeEnlarge
+    selectedSeedPointBrightenColor = 0.5
+    selectedSeedPointFixedColor = "1 0.333333333333333 1"
+    selectedSeedPointEnlargeSize = 2
+    selectedSeedPointSize = 1
+    csoDefaultLabel = ""
+    csoDefaultLabelAddUniqueId = FALSE
+    csoDefaultLabelUniqueIdFormat = " (%i)"
+    csoDefaultLabelAddUniqueIdAlways = FALSE
+    csoDefaultDescription = ""
+    csoDefaultShowState = TRUE
+    csoDefaultVoxelizeState = TRUE
+    csoDefaultEditableState = TRUE
+    groupSingleDeleteGroupCSOHandling = RemoveIfInNoGroup
+    groupDefaultLabel = ""
+    groupDefaultLabelAddUniqueId = FALSE
+    groupDefaultLabelUniqueIdFormat = " (%i)"
+    groupDefaultLabelAddUniqueIdAlways = FALSE
+    groupDefaultDescription = ""
+    groupDefaultUseTimePointIndex = FALSE
+    groupDefaultTimePointIndex = 0
+    groupDefaultUseShowState = FALSE
+    groupDefaultShowState = TRUE
+    groupDefaultUseVoxelizeState = FALSE
+    groupDefaultVoxelizeState = TRUE
+    groupDefaultUseEditableState = FALSE
+    groupDefaultEditableState = TRUE
+    groupDefaultUsePathPointStyle = FALSE
+    groupDefaultPathPointStyle = LineStyleSolid
+    groupDefaultUsePathPointWidth = FALSE
+    groupDefaultPathPointWidth = 1
+    groupDefaultUsePathPointColor = FALSE
+    groupDefaultPathPointColor = "1 1 1"
+    groupDefaultUsePathPointAlpha = FALSE
+    groupDefaultPathPointAlpha = 1
+    groupDefaultUseSeedPointStyle = FALSE
+    groupDefaultSeedPointStyle = MarkerModeRect
+    groupDefaultUseSeedPointSize = FALSE
+    groupDefaultSeedPointSize = 3
+    groupDefaultUseSeedPointColor = FALSE
+    groupDefaultSeedPointColor = "0 1 0"
+    groupDefaultUseSeedPointAlpha = FALSE
+    groupDefaultSeedPointAlpha = 1
+    groupDefaultUseVoxelWriteMode = FALSE
+    groupDefaultVoxelWriteMode = VoxelWriteModeModule
+    groupDefaultUseVoxelWriteValue = FALSE
+    groupDefaultVoxelWriteValue = 1024
+    groupDefaultNumMaximumCSOs = 0
+    groupDefaultOverflowHandling = RemoveFirst
+    groupDefaultRemoveFromGroupHandling = RemoveIfInNoGroup
+    groupDefaultDeleteGroupCSOHandling = RemoveIfInNoGroup
+    listSingleRemoveEmptyGroupHandling = RemoveAlways
+    listDefaultRemoveEmptyGroupHandling = RemoveAlways
+    enableUndoRedo = TRUE
+    numUndos = 1
+    numRedos = 0
+    undoStackLimit = 16
+    useSelectionCSONotification = FALSE
+    useSelectionGroupNotification = FALSE
+    useFinishedCSONotification = FALSE
+    useFinishedGroupNotification = FALSE
+    useCSOMovedNotification = FALSE
+    useRepaintNotification = FALSE
+    useInteractionInitNotification = FALSE
+    useStartNewCSONotification = FALSE
+    enableSelectionNotification = TRUE
+    enableFinishedNotification = TRUE
+    enableCSOMovedNotification = TRUE
+    enableRepaintNotification = TRUE
+    outputApplicationEventsDebug = FALSE
+    csoTreeView = ""
+    groupTreeView = ""
+    numCSOs = 1
+    numGroups = 0
+    numSelectedCSOs = 1
+    numSelectedGroups = 0
+    selectedCSOsGroupIds = ""
+    csoTabSelected = TRUE
+    groupTabSelected = FALSE
+    selectionTabSelected = FALSE
+    notificationTabSelected = FALSE
+    defaultTabSelected = FALSE
+    csoCommonTabSelected = FALSE
+    csoVisualsTabSelected = TRUE
+    groupCommonTabSelected = TRUE
+    groupVisualsTabSelected = FALSE
+    groupMiscTabSelected = FALSE
+    notificationControlTabSelected = TRUE
+    notificationOutputCSOTabSelected = FALSE
+    notificationOutputGroupTabSelected = FALSE
+    defaultCSOCommonTabSelected = TRUE
+    defaultGroupCommonTabSelected = FALSE
+    defaultGroupVisualsTabSelected = FALSE
+    defaultGroupMiscTabSelected = FALSE
+  }
+}
+module SoView2DCSOExtensibleEditor {
+  internal  {
+    frame = "1561 613 208 56"
+    moduleGroupName = CSOSave
+    windows  {
+      window _default {
+        geometry = "743 1010 433 389"
+        sizeHint = "433 389"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DCSOExtensibleEditor1
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 16
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    creatorExtensionId = __default
+    alwaysCreateNewCSOs = FALSE
+    alwaysModifyExistingCSOs = FALSE
+    keyCommandsEnabled = TRUE
+    enableRemoveAll = FALSE
+    interactOnlyWithSelectedCSO = TRUE
+    renderLeftOverCSOsWithDefaultRenderer = TRUE
+    allowSelectionWithDefaultRenderer = FALSE
+    renderCSOsOnImagesDependingOnCreationMode = ON_ALL_IMAGES
+    updateCSOIdUnderMouseCursor = TRUE
+    updateImageStatisticsOnFinishInteraction = FALSE
+  }
+}
+module SoCSOLiveWireEditor {
+  internal  {
+    frame = "1497 813 160 56"
+    moduleGroupName = CSOSave
+    windows  {
+      window _default {
+        geometry = "779 906 404 598"
+        sizeHint = "362 598"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "717 329 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+      window "CSO Creation Parameters" {
+        geometry = "628 172 351 339"
+        sizeHint = "340 339"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOLiveWireEditor1
+    extensionId = liveWire
+    allowCreation = TRUE
+    allowModification = TRUE
+    allowSeedPointInteraction = TRUE
+    shouldRender = TRUE
+    selectionCursor = POINTING_HAND_CURSOR
+    interactionForbiddenCursor = FORBIDDEN_CURSOR
+    moduleCreatorId = 0
+    moduleCreatorString = SoCSOLiveWireEditor
+    labelPrefixString = CSO
+    requirePointerPositionMovementToCreateCSO = FALSE
+    pointerPositionEpsilonForCreatingCSO = 24
+    createCursor = CROSS_FREEFORM_CURSOR
+    moveAllCursor = MOVE_ALL_CURSOR
+    moveSeedCursor = CROSS_CURSOR
+    shouldEmptyGroupBeforeGenerating = TRUE
+    addCSOToGroupMode = GROUP_NONE
+    addCSOToGroupLabel = ""
+    addCSOToGroupId = -1
+    defaultPathPointStyle = PATH_POINTS_STYLE_SOLID
+    defaultPathPointWidth = 1
+    defaultPathPointColor = "1 1 1"
+    defaultPathPointAlpha = 1
+    defaultSeedPointStyle = SEED_POINT_STYLE_RECTANGLE
+    defaultSeedPointSize = 3
+    defaultSeedPointColor = "1 1 1"
+    defaultSeedPointAlpha = 1
+    defaultVoxelWriteMode = VOXEL_WRITE_MODULE
+    defaultVoxelWriteValue = 1024
+    generateSeedPointsWhileDragging = TRUE
+    insertSeedPointByClickingOnPathPointList = TRUE
+    insertSeedPointCursor = CROSS_PLUS_CURSOR
+    canCloseCursor = CROSS_LINK_CURSOR
+    doubleClickMode = CSO_EDITOR_DOUBLE_CLICK_CLOSE
+    neighborhoodMode = CSO_LIVE_WIRE_4_NEIGHBORHOOD
+    useLaplacianSmoothing = TRUE
+    numLaplacianSmoothingPasses = 2
+    weightGradient = 0.43000001
+    weightLaplacian = 0.14
+    weightDirectional = 0.43000001
+    usePathCostThreshold = FALSE
+    pathCostThreshold = 0.80000001
+    inputImageIsCostImage = FALSE
+  }
+}
+module SoCSOVisualizationSettings {
+  internal  {
+    frame = "1681 805 192 56"
+    moduleGroupName = CSOSave
+    windows  {
+      window _default {
+        geometry = "566 865 399 654"
+        sizeHint = "399 654"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCSOVisualizationSettings1
+    autoApply = TRUE
+    shouldUseAntiAliasing = TRUE
+    globalAlphaFactor = 1
+    showCSOsOnAllTimePoints = FALSE
+    overwriteCurrentTimePoint = FALSE
+    newCurrentTimePoint = 0
+    orientationFilterMode = ORIENTATION_MODE_ALL
+    showParallelThickness = 0.2
+    ghostingDepthInVoxel = 0
+    voxelSlabAugment = 0
+    shouldRenderShadow = FALSE
+    shadowColor = "0 0 0"
+    shadowAlpha = 1
+    shadowLineWidth = 1
+    shouldRenderSeedPoints = TRUE
+    shouldRenderPathPoints = TRUE
+    shouldOverwriteSeedPointsSettings = TRUE
+    shouldUsePathPointColorForSeedPoints = FALSE
+    shouldRenderSeedPointsOnlyForSelectedCSOs = FALSE
+    useSeedPointOnSliceStyle = TRUE
+    useSeedPointOnSliceSize = FALSE
+    useSeedPointOnSliceColor = FALSE
+    useSeedPointOnSliceAlpha = FALSE
+    seedPointOnSliceStyle = SEED_POINT_STYLE_RECTANGLE
+    seedPointOnSliceSize = 3
+    seedPointOnSliceColor = "0.360784322023392 1 0.0666666701436043"
+    seedPointOnSliceAlpha = 1
+    useSeedPointBelowSliceStyle = TRUE
+    useSeedPointBelowSliceSize = FALSE
+    useSeedPointBelowSliceColor = FALSE
+    useSeedPointBelowSliceAlpha = FALSE
+    seedPointBelowSliceStyle = SEED_POINT_STYLE_NONE
+    seedPointBelowSliceSize = 3
+    seedPointBelowSliceColor = "1 1 1"
+    seedPointBelowSliceAlpha = 1
+    useSeedPointAboveSliceStyle = TRUE
+    useSeedPointAboveSliceSize = FALSE
+    useSeedPointAboveSliceColor = FALSE
+    useSeedPointAboveSliceAlpha = FALSE
+    seedPointAboveSliceStyle = SEED_POINT_STYLE_NONE
+    seedPointAboveSliceSize = 3
+    seedPointAboveSliceColor = "1 1 1"
+    seedPointAboveSliceAlpha = 1
+    shouldOverwritePathPointsSettings = TRUE
+    usePathPointsOnSliceLineStyle = TRUE
+    usePathPointsOnSliceLineWidth = FALSE
+    usePathPointsOnSliceColor = FALSE
+    usePathPointsOnSliceAlpha = TRUE
+    pathPointsOnSliceLineStyle = PATH_POINTS_STYLE_SOLID
+    pathPointsOnSliceLineWidth = 1
+    pathPointsOnSliceColor = "1 0.0313725508749485 0.0313725508749485"
+    pathPointsOnSliceAlpha = 1
+    usePathPointsBelowSliceLineStyle = TRUE
+    usePathPointsBelowSliceLineWidth = FALSE
+    usePathPointsBelowSliceColor = FALSE
+    usePathPointsBelowSliceAlpha = TRUE
+    pathPointsBelowSliceLineStyle = PATH_POINTS_STYLE_DASHED
+    pathPointsBelowSliceLineWidth = 1
+    pathPointsBelowSliceColor = "1 1 1"
+    pathPointsBelowSliceAlpha = 0.5
+    usePathPointsAboveSliceLineStyle = TRUE
+    usePathPointsAboveSliceLineWidth = FALSE
+    usePathPointsAboveSliceColor = FALSE
+    usePathPointsAboveSliceAlpha = TRUE
+    pathPointsAboveSliceLineStyle = PATH_POINTS_STYLE_DASHED
+    pathPointsAboveSliceLineWidth = 1
+    pathPointsAboveSliceColor = "1 1 1"
+    pathPointsAboveSliceAlpha = 0.5
+    shouldOverwriteSelectionSettings = TRUE
+    selectedPathPointsColorMode = HIGHLIGHT_MODE_RELATIVE
+    selectedPathPointsLineWidthMode = HIGHLIGHT_MODE_RELATIVE
+    selectedPathPointsBrightenValue = 1.2
+    selectedPathPointsFixedColor = "1 1 0"
+    selectedPathPointsAlpha = 1
+    selectedPathPointsWidenValue = 1
+    selectedPathPointsFixedLineWidth = 2
+    selectedSeedPointColorMode = HIGHLIGHT_MODE_RELATIVE
+    selectedSeedPointSizeMode = HIGHLIGHT_MODE_RELATIVE
+    selectedSeedPointBrightenValue = 1.2
+    selectedSeedPointFixedColor = "1 1 0"
+    selectedSeedPointAlpha = 1
+    selectedSeedPointEnlargeValue = 1
+    selectedSeedPointFixedSize = 2
+    enableMouseOverHighlighting = TRUE
+    mouseOverPathPointsColorMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverPathPointsLineWidthMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverPathPointsBrightenValue = 1.2
+    mouseOverPathPointsFixedColor = "1 1 0"
+    mouseOverPathPointsAlpha = 1
+    mouseOverPathPointsWidenValue = 1
+    mouseOverPathPointsFixedLineWidth = 2
+    mouseOverSeedPointColorMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverSeedPointSizeMode = HIGHLIGHT_MODE_RELATIVE
+    mouseOverSeedPointBrightenValue = 1.2
+    mouseOverSeedPointFixedColor = "1 1 0"
+    mouseOverSeedPointAlpha = 1
+    mouseOverSeedPointEnlargeValue = 1
+    mouseOverSeedPointFixedSize = 2
+    visibleByMode = CSOs
+    visibleIdList = ""
+    invertVisibility = FALSE
+  }
+}
+module Convolution {
+  internal  {
+    frame = "838 65 104 64"
+    moduleGroupName = fundamental_image_process
+    windows  {
+      window _default {
+        geometry = "204 1010 327 190"
+        sizeHint = "327 190"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = average_filter
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    intervalMinOfFilteredVoxels = 0
+    intervalMaxOfFilteredVoxels = 1024
+    useIntervalOfFilteredVoxels = FALSE
+    externalKernel = ""
+    predefKernel = "10x10 Average Kernel"
+  }
+}
+module Threshold {
+  internal  {
+    frame = "869 420 88 72"
+    moduleGroupName = fundamental_image_process
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "90 1189 307 313"
+        sizeHint = "271 313"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Threshold
+    threshold = 48
+    relativeThreshold = FALSE
+    comparisonOperator = Greater
+    conditionTrueWriteValue = ImgMax
+    userConditionTrueValue = 255
+    conditionFalseWriteValue = UserDef
+    userConditionFalseValue = 0
+  }
+}
+module Histogram {
+  internal  {
+    frame = "821 821 96 56"
+    moduleGroupName = histogram_show_roi
+    windows  {
+      window _default {
+        geometry = "41 203 431 206"
+        sizeHint = "431 206"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Histogram1
+    useMask = FALSE
+    xRange = "Dynamic Min/Max"
+    maskMode = Labels
+    curveType = Line
+    curveStyle = 0
+    curveTitle = ""
+    updateMode = AutoUpdate
+    useStepFunction = FALSE
+    useBinSizeOneRepresentation = TRUE
+    useBackgroundValue = FALSE
+    backgroundValue = 0
+    binSize = 1
+    maxBinCount = 25000000
+  }
+}
+module StylePalette {
+  internal  {
+    frame = "921 821 104 56"
+    moduleGroupName = histogram_show_roi
+    windows  {
+      window _default {
+        geometry = "70 89 632 433"
+        sizeHint = "632 433"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StylePalette1
+    color1 = "1 1 0"
+    color2 = "1 0 0"
+    color3 = "0 0 1"
+    color4 = "0 1 0"
+    color5 = "1 0.5 0"
+    color6 = "1 0 1"
+    color7 = "0 1 1"
+    color8 = "0.5 1 0.5"
+    color9 = "1 0 0.5"
+    color10 = "0.5 1 0"
+    color11 = "0.5 0 1"
+    color12 = "0 1 0.5"
+    lineStyle1 = Solid
+    lineStyle2 = Solid
+    lineStyle3 = Solid
+    lineStyle4 = Solid
+    lineStyle5 = Solid
+    lineStyle6 = Solid
+    lineStyle7 = Solid
+    lineStyle8 = Solid
+    lineStyle9 = Solid
+    lineStyle10 = Solid
+    lineStyle11 = Solid
+    lineStyle12 = Solid
+    lineWidth1 = 1
+    lineWidth2 = 1
+    lineWidth3 = 1
+    lineWidth4 = 1
+    lineWidth5 = 1
+    lineWidth6 = 1
+    lineWidth7 = 1
+    lineWidth8 = 1
+    lineWidth9 = 1
+    lineWidth10 = 1
+    lineWidth11 = 1
+    lineWidth12 = 1
+    markerType1 = None
+    markerType2 = None
+    markerType3 = None
+    markerType4 = None
+    markerType5 = None
+    markerType6 = None
+    markerType7 = None
+    markerType8 = None
+    markerType9 = None
+    markerType10 = None
+    markerType11 = None
+    markerType12 = None
+    markerSize1 = 10
+    markerSize2 = 10
+    markerSize3 = 10
+    markerSize4 = 10
+    markerSize5 = 10
+    markerSize6 = 10
+    markerSize7 = 10
+    markerSize8 = 10
+    markerSize9 = 10
+    markerSize10 = 10
+    markerSize11 = 10
+    markerSize12 = 10
+    antiAlias1 = FALSE
+    antiAlias2 = FALSE
+    antiAlias3 = FALSE
+    antiAlias4 = FALSE
+    antiAlias5 = FALSE
+    antiAlias6 = FALSE
+    antiAlias7 = FALSE
+    antiAlias8 = FALSE
+    antiAlias9 = FALSE
+    antiAlias10 = FALSE
+    antiAlias11 = FALSE
+    antiAlias12 = FALSE
+    name1 = ""
+    name2 = ""
+    name3 = ""
+    name4 = ""
+    name5 = ""
+    name6 = ""
+    name7 = ""
+    name8 = ""
+    name9 = ""
+    name10 = ""
+    name11 = ""
+    name12 = ""
+    currentStyle = 0
+    currentColor = "1 1 1"
+    currentLineStyle = None
+    currentLineWidth = 1
+    currentMarkerType = None
+    currentMarkerSize = 4
+    currentAntiAlias = FALSE
+    currentName = ""
+    reservedEntries = 1
+  }
+}
+module SoRenderArea {
+  internal  {
+    frame = "825 605 120 56"
+    moduleGroupName = histogram_show_roi
+    windows  {
+      window _viewer {
+        geometry = "1040 1069 786 270"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoRenderArea1
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = DELAYED_BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    hiResRendering = TRUE
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+  }
+}
+module SoDiagram2D {
+  internal  {
+    frame = "833 693 120 56"
+    moduleGroupName = histogram_show_roi
+  }
+  fields  {
+    instanceName = SoDiagram2D1
+    minX = 0
+    maxX = 195
+    minY = 0
+    maxY = 12812
+    scaleX = 1
+    scaleY = 1
+    autoRangeX = TRUE
+    autoRangeY = TRUE
+    axisColor = "1 1 1"
+    axisRotation = AXIS_ROTATION_LEFT_BOTTOM
+    titleFontHeight = 14
+    drawDiagramTitle = FALSE
+    diagramTitleString = ""
+    drawGrid = FALSE
+    gridColor = "0.349999994039536 0.349999994039536 0.349999994039536"
+    drawLegend = FALSE
+    legendPlacement = LEGEND_UPPER_RIGHT
+    legendFontHeight = 12
+    autoLimitLegendFontHeight = FALSE
+    zoomAnimationEase = 0.5
+    zoomAnimationEpsilon = 0.0099999998
+    useZoomRestrictions = FALSE
+    minZoomFactor = 0.1
+    maxZoomFactor = 10
+    drawChildrenExtensions = TRUE
+    forwardEventsToChildrenExtensions = TRUE
+    changeLineOpacityForHighlightedCurves = FALSE
+    curveLineOpacityHighlighted = 1
+    changeAreaOpacityForHighlightedCurves = FALSE
+    curveAreaOpacityHighlighted = 1
+    changeLineOpacityForNotHighlightedCurves = FALSE
+    curveLineOpacityNotHighlighted = 0.30000001
+    changeAreaOpacityForNotHighlightedCurves = FALSE
+    curveAreaOpacityNotHighlighted = 0.30000001
+    changeLineStyleForHighlightedCurves = FALSE
+    curveLineStyleHighlighted = 1
+    changeLineStyleForNotHighlightedCurves = FALSE
+    curveLineStyleNotHighlighted = 1
+    curveIndexHighlighted = ""
+    reorderHighlightedCurves = FALSE
+    borderH = 46
+    borderV = 27
+    autoBorderH = TRUE
+    autoBorderV = TRUE
+    drawAxisX = TRUE
+    drawAxisY = TRUE
+    drawTicksX = TRUE
+    drawTicksY = TRUE
+    drawLabelsX = TRUE
+    drawLabelsY = TRUE
+    drawAxisTitleX = FALSE
+    drawAxisTitleY = FALSE
+    axisTitleStringX = "X [dn]"
+    axisTitleStringY = "Y [dn]"
+    axisTitleFontHeightX = 12
+    axisTitleFontHeightY = 12
+    axisLabelFontHeightX = 12
+    axisLabelFontHeightY = 12
+    tickMinDistance = 30
+    curveColor = "1 1 1"
+    lineStyle = LINE_STYLE_SOLID
+    markerType = MARKER_TYPE_NONE
+    markerSize = 10
+    lineWidth = 1
+    antiAlias = TRUE
+    areaOpacity = 0.5
+    lineOpacity = 1
+    stylePaletteMode = STYLE_PALETTE_INDEX
+  }
+}
+module Histogram {
+  internal  {
+    frame = "1098 795 88 56"
+    moduleGroupName = histogram_show
+    windows  {
+      window _default {
+        geometry = "41 203 431 206"
+        sizeHint = "431 206"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Histogram
+    useMask = FALSE
+    xRange = "Dynamic Min/Max"
+    maskMode = Labels
+    curveType = Line
+    curveStyle = 0
+    curveTitle = ""
+    updateMode = AutoUpdate
+    useStepFunction = FALSE
+    useBinSizeOneRepresentation = TRUE
+    useBackgroundValue = FALSE
+    backgroundValue = 0
+    binSize = 1
+    maxBinCount = 25000000
+  }
+}
+module StylePalette {
+  internal  {
+    frame = "1194 795 104 56"
+    moduleGroupName = histogram_show
+    windows  {
+      window _default {
+        geometry = "70 89 632 433"
+        sizeHint = "632 433"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StylePalette0
+    color1 = "1 1 0"
+    color2 = "1 0 0"
+    color3 = "0 0 1"
+    color4 = "0 1 0"
+    color5 = "1 0.5 0"
+    color6 = "1 0 1"
+    color7 = "0 1 1"
+    color8 = "0.5 1 0.5"
+    color9 = "1 0 0.5"
+    color10 = "0.5 1 0"
+    color11 = "0.5 0 1"
+    color12 = "0 1 0.5"
+    lineStyle1 = Solid
+    lineStyle2 = Solid
+    lineStyle3 = Solid
+    lineStyle4 = Solid
+    lineStyle5 = Solid
+    lineStyle6 = Solid
+    lineStyle7 = Solid
+    lineStyle8 = Solid
+    lineStyle9 = Solid
+    lineStyle10 = Solid
+    lineStyle11 = Solid
+    lineStyle12 = Solid
+    lineWidth1 = 1
+    lineWidth2 = 1
+    lineWidth3 = 1
+    lineWidth4 = 1
+    lineWidth5 = 1
+    lineWidth6 = 1
+    lineWidth7 = 1
+    lineWidth8 = 1
+    lineWidth9 = 1
+    lineWidth10 = 1
+    lineWidth11 = 1
+    lineWidth12 = 1
+    markerType1 = None
+    markerType2 = None
+    markerType3 = None
+    markerType4 = None
+    markerType5 = None
+    markerType6 = None
+    markerType7 = None
+    markerType8 = None
+    markerType9 = None
+    markerType10 = None
+    markerType11 = None
+    markerType12 = None
+    markerSize1 = 10
+    markerSize2 = 10
+    markerSize3 = 10
+    markerSize4 = 10
+    markerSize5 = 10
+    markerSize6 = 10
+    markerSize7 = 10
+    markerSize8 = 10
+    markerSize9 = 10
+    markerSize10 = 10
+    markerSize11 = 10
+    markerSize12 = 10
+    antiAlias1 = FALSE
+    antiAlias2 = FALSE
+    antiAlias3 = FALSE
+    antiAlias4 = FALSE
+    antiAlias5 = FALSE
+    antiAlias6 = FALSE
+    antiAlias7 = FALSE
+    antiAlias8 = FALSE
+    antiAlias9 = FALSE
+    antiAlias10 = FALSE
+    antiAlias11 = FALSE
+    antiAlias12 = FALSE
+    name1 = ""
+    name2 = ""
+    name3 = ""
+    name4 = ""
+    name5 = ""
+    name6 = ""
+    name7 = ""
+    name8 = ""
+    name9 = ""
+    name10 = ""
+    name11 = ""
+    name12 = ""
+    currentStyle = 0
+    currentColor = "1 1 1"
+    currentLineStyle = None
+    currentLineWidth = 1
+    currentMarkerType = None
+    currentMarkerSize = 4
+    currentAntiAlias = FALSE
+    currentName = ""
+    reservedEntries = 1
+  }
+}
+module SoRenderArea {
+  internal  {
+    frame = "1102 579 112 56"
+    moduleGroupName = histogram_show
+    windows  {
+      window _viewer {
+        geometry = "1391 1134 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoRenderArea
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = DELAYED_BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    hiResRendering = TRUE
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+  }
+}
+module SoDiagram2D {
+  internal  {
+    frame = "1110 667 112 56"
+    moduleGroupName = histogram_show
+  }
+  fields  {
+    instanceName = SoDiagram2D
+    minX = -3
+    maxX = 2
+    minY = 3
+    maxY = 151380
+    scaleX = 1
+    scaleY = 1
+    autoRangeX = TRUE
+    autoRangeY = TRUE
+    axisColor = "1 1 1"
+    axisRotation = AXIS_ROTATION_LEFT_BOTTOM
+    titleFontHeight = 14
+    drawDiagramTitle = FALSE
+    diagramTitleString = ""
+    drawGrid = FALSE
+    gridColor = "0.349999994039536 0.349999994039536 0.349999994039536"
+    drawLegend = FALSE
+    legendPlacement = LEGEND_UPPER_RIGHT
+    legendFontHeight = 12
+    autoLimitLegendFontHeight = FALSE
+    zoomAnimationEase = 0.5
+    zoomAnimationEpsilon = 0.0099999998
+    useZoomRestrictions = FALSE
+    minZoomFactor = 0.1
+    maxZoomFactor = 10
+    drawChildrenExtensions = TRUE
+    forwardEventsToChildrenExtensions = TRUE
+    changeLineOpacityForHighlightedCurves = FALSE
+    curveLineOpacityHighlighted = 1
+    changeAreaOpacityForHighlightedCurves = FALSE
+    curveAreaOpacityHighlighted = 1
+    changeLineOpacityForNotHighlightedCurves = FALSE
+    curveLineOpacityNotHighlighted = 0.30000001
+    changeAreaOpacityForNotHighlightedCurves = FALSE
+    curveAreaOpacityNotHighlighted = 0.30000001
+    changeLineStyleForHighlightedCurves = FALSE
+    curveLineStyleHighlighted = 1
+    changeLineStyleForNotHighlightedCurves = FALSE
+    curveLineStyleNotHighlighted = 1
+    curveIndexHighlighted = ""
+    reorderHighlightedCurves = FALSE
+    borderH = 53
+    borderV = 27
+    autoBorderH = TRUE
+    autoBorderV = TRUE
+    drawAxisX = TRUE
+    drawAxisY = TRUE
+    drawTicksX = TRUE
+    drawTicksY = TRUE
+    drawLabelsX = TRUE
+    drawLabelsY = TRUE
+    drawAxisTitleX = FALSE
+    drawAxisTitleY = FALSE
+    axisTitleStringX = "X [dn]"
+    axisTitleStringY = "Y [dn]"
+    axisTitleFontHeightX = 12
+    axisTitleFontHeightY = 12
+    axisLabelFontHeightX = 12
+    axisLabelFontHeightY = 12
+    tickMinDistance = 30
+    curveColor = "1 1 1"
+    lineStyle = LINE_STYLE_SOLID
+    markerType = MARKER_TYPE_NONE
+    markerSize = 10
+    lineWidth = 1
+    antiAlias = TRUE
+    areaOpacity = 0.5
+    lineOpacity = 1
+    stylePaletteMode = STYLE_PALETTE_INDEX
+  }
+}
+module OtsuThreshold {
+  internal  {
+    frame = "681 428 144 56"
+    moduleGroupName = fundamental_image_process
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "161 1243 234 122"
+        sizeHint = "234 122"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OtsuThreshold
+    binSize = 32
+    autoApply = TRUE
+    backgroundThreshold = 0
+    threshold = 48
+  }
+}
 module LocalCSOLoad {
   internal  {
-    frame = "1045 525 152 56"
-    moduleGroupName = ""
+    frame = "1493 441 184 64"
+    moduleGroupName = LOAD_CSO_SHOW
     showNetworkPanel = true
     windows  {
       window _default {
@@ -16,18 +1040,18 @@ module LocalCSOLoad {
     }
   }
   fields  {
-    instanceName = LocalCSOLoad1
+    instanceName = CSOLoad_WaterShed
     name = $(NETWORK)/exercise-itk-isoloated-watershed.cso
     autoApply = TRUE
   }
 }
 module View2D {
   internal  {
-    frame = "1037 125 120 56"
-    moduleGroupName = ""
+    frame = "1496 56 136 64"
+    moduleGroupName = LOAD_CSO_SHOW
     windows  {
       window _default {
-        geometry = "295 1140 400 400"
+        geometry = "457 856 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -88,8 +1112,8 @@ module View2D {
 }
 module LocalImage {
   internal  {
-    frame = "1069 33 136 64"
-    moduleGroupName = ""
+    frame = "1605 161 136 64"
+    moduleGroupName = LOAD_CSO_SHOW
     showNetworkPanel = true
     windows  {
       window _default {
@@ -107,11 +1131,11 @@ module LocalImage {
 }
 module SoView2DCSOEditor {
   internal  {
-    frame = "1029 277 152 56"
-    moduleGroupName = ""
+    frame = "1501 261 152 56"
+    moduleGroupName = LOAD_CSO_SHOW
     windows  {
       window _default {
-        geometry = "625 878 670 654"
+        geometry = "244 880 670 654"
         sizeHint = "670 654"
         wasOpen = no
       }
@@ -199,7 +1223,7 @@ module SoView2DCSOEditor {
     overwriteSelectionVisualizationSettings = FALSE
     selectionColoringMode = SELECTION_COLOR_MODE_FIXED
     selectionBrightenColor = 0.2
-    selectionFixedColor = "0 1 0"
+    selectionFixedColor = "0 1 1"
     selectionLineWidthMode = SELECTION_LINE_WIDEN
     selectionWidenLineWidth = 1
     selectionFixedLineWidth = 1
@@ -252,8 +1276,8 @@ module SoView2DCSOEditor {
 }
 module CSOManager {
   internal  {
-    frame = "1041 381 112 56"
-    moduleGroupName = ""
+    frame = "1505 349 112 56"
+    moduleGroupName = LOAD_CSO_SHOW
     windows  {
       window _default {
         geometry = "117 821 811 602"
@@ -373,18 +1397,18 @@ module CSOManager {
 }
 module Convolution {
   internal  {
-    frame = "217 205 96 56"
-    moduleGroupName = ""
+    frame = "678 137 104 64"
+    moduleGroupName = fundamental_image_process
     windows  {
       window _default {
-        geometry = "211 1270 327 190"
+        geometry = "151 1073 327 303"
         sizeHint = "327 190"
         wasOpen = no
       }
     }
   }
   fields  {
-    instanceName = Convolution
+    instanceName = laplace_edge
     borderHandling = PadSrcClamp
     fillValue = 0
     referenceExtentMode = Overlap
@@ -392,75 +1416,16 @@ module Convolution {
     intervalMaxOfFilteredVoxels = 1024
     useIntervalOfFilteredVoxels = FALSE
     externalKernel = ""
-    predefKernel = "Laplace Kernel"
-  }
-}
-module LocalImage {
-  internal  {
-    frame = "1573 741 104 56"
-    moduleGroupName = ""
-    windows  {
-      window _default {
-        geometry = "720 1129 480 152"
-        sizeHint = "480 152"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = LocalImage1
-    name = $(NETWORK)/out_112.bmp
-    autoLoad = TRUE
-  }
-}
-module SubImage {
-  internal  {
-    frame = "1649 645 96 56"
-    moduleGroupName = ""
-    windows  {
-      window _default {
-        geometry = "283 851 445 556"
-        sizeHint = "445 556"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = SubImage2
-    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
-    autoApplyBox = FALSE
-    correctForNegativeSubImageExtents = TRUE
-    enableBoxClamping = FALSE
-    x = 150
-    sx = 250
-    modifyX = TRUE
-    y = 80
-    sy = 210
-    modifyY = TRUE
-    z = 0
-    sz = 1
-    modifyZ = FALSE
-    c = 0
-    sc = 3
-    modifyC = FALSE
-    t = 0
-    st = 1
-    modifyT = FALSE
-    u = 0
-    su = 1
-    modifyU = FALSE
-    fillValue = 0
-    mode = VoxelStartSize
-    autoApply = TRUE
+    predefKernel = "Laplace2 Kernel"
   }
 }
 module View2D {
   internal  {
-    frame = "1686 148 80 56"
+    frame = "1279 73 80 56"
     moduleGroupName = itkIsolatedWaterShed
     windows  {
       window _default {
-        geometry = "1400 1179 400 400"
+        geometry = "1044 1112 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -521,7 +1486,7 @@ module View2D {
 }
 module SoView2DPosition {
   internal  {
-    frame = "1430 452 144 56"
+    frame = "1023 377 144 56"
     moduleGroupName = itkIsolatedWaterShed
     windows  {
       window _default {
@@ -555,7 +1520,7 @@ module SoView2DPosition {
     renderOnSlab = FALSE
     clipToSlice = FALSE
     cursorShape = UNDEFINED_CURSOR
-    worldPosition = "91.9868011474609 41.3551788330078 0.5"
+    worldPosition = "88.8839645385742 76.7452011108398 0.5"
     drawingModel = DRAWINGMODEL_CROSSHAIRS
     drawingModelSizeUnit = SIZEUNIT_VOXEL
     drawingModelSize = -1
@@ -578,11 +1543,11 @@ module SoView2DPosition {
 }
 module itkIsolatedWatershedImageFilter {
   internal  {
-    frame = "1618 340 216 56"
+    frame = "1211 265 216 56"
     moduleGroupName = itkIsolatedWaterShed
     windows  {
       window _default {
-        geometry = "389 1010 406 500"
+        geometry = "320 908 406 500"
         sizeHint = "287 500"
         wasOpen = no
       }
@@ -601,8 +1566,8 @@ module itkIsolatedWatershedImageFilter {
     upperOutSideMode = MaxValue
     lowerOutSideValue = 0
     upperOutSideValue = 1
-    seed1 = "101.287307739258 87.1601715087891 0.5"
-    seed2 = "91.9868011474609 41.3551788330078 0.5"
+    seed1 = "78.4609832763672 64.4460906982422 0.5"
+    seed2 = "88.8839645385742 76.7452011108398 0.5"
     threshold = 0.01
     isolatedValueTolerance = 0.001
     upperValueLimit = 20
@@ -614,7 +1579,7 @@ module itkIsolatedWatershedImageFilter {
 }
 module SoView2DPosition {
   internal  {
-    frame = "1422 348 144 56"
+    frame = "1015 273 144 56"
     moduleGroupName = itkIsolatedWaterShed
     windows  {
       window _default {
@@ -648,7 +1613,7 @@ module SoView2DPosition {
     renderOnSlab = FALSE
     clipToSlice = FALSE
     cursorShape = UNDEFINED_CURSOR
-    worldPosition = "101.287307739258 87.1601715087891 0.5"
+    worldPosition = "78.4609832763672 64.4460906982422 0.5"
     drawingModel = DRAWINGMODEL_CROSSHAIRS
     drawingModelSizeUnit = SIZEUNIT_VOXEL
     drawingModelSize = -1
@@ -671,11 +1636,11 @@ module SoView2DPosition {
 }
 module View2D {
   internal  {
-    frame = "1450 140 120 56"
+    frame = "1043 65 120 56"
     moduleGroupName = itkIsolatedWaterShed
     windows  {
       window _default {
-        geometry = "1197 1145 400 400"
+        geometry = "463 1119 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -722,10 +1687,10 @@ module View2D {
     useShaders = TRUE
     useManagedInteraction = FALSE
     lutCenter = 0
-    lutWidth = 255
+    lutWidth = 1
     annotationOn = TRUE
     annotationMode = ANNO_MODE_AUTO
-    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationSizeMode = ANNO_SHOW_HIDE
     annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
     annotationFontSize = ANNO_SIZE_AUTO
     annoCoords = Voxel
@@ -741,13 +1706,13 @@ module View2D {
 }
 module View2D {
   internal  {
-    frame = "1245 121 120 64"
-    moduleGroupName = ""
+    frame = "1709 49 120 64"
+    moduleGroupName = LOAD_CSO_SHOW
     windows  {
       window _default {
-        geometry = "733 1151 400 400"
+        geometry = "1406 858 400 400"
         sizeHint = "400 400"
-        wasOpen = no
+        wasOpen = yes
       }
       window Settings {
         geometry = "507 165 253 545"
@@ -806,11 +1771,11 @@ module View2D {
 }
 module SoView2DCSOEditor {
   internal  {
-    frame = "1221 285 152 56"
-    moduleGroupName = ""
+    frame = "1693 261 152 56"
+    moduleGroupName = LOAD_CSO_SHOW
     windows  {
       window _default {
-        geometry = "625 878 670 654"
+        geometry = "975 838 670 654"
         sizeHint = "670 654"
         wasOpen = no
       }
@@ -951,8 +1916,8 @@ module SoView2DCSOEditor {
 }
 module CSOManager {
   internal  {
-    frame = "1241 389 112 56"
-    moduleGroupName = ""
+    frame = "1713 357 112 56"
+    moduleGroupName = LOAD_CSO_SHOW
     windows  {
       window _default {
         geometry = "888 850 811 602"
@@ -1072,8 +2037,8 @@ module CSOManager {
 }
 module LocalCSOLoad {
   internal  {
-    frame = "1241 553 144 64"
-    moduleGroupName = ""
+    frame = "1705 441 144 64"
+    moduleGroupName = LOAD_CSO_SHOW
     showNetworkPanel = true
     windows  {
       window _default {
@@ -1084,14 +2049,14 @@ module LocalCSOLoad {
     }
   }
   fields  {
-    instanceName = exercise_cso
-    name = $(NETWORK)/exercise.cso
+    instanceName = CSOLoad_ROI
+    name = $(NETWORK)/exercise_roi.cso
     autoApply = TRUE
   }
 }
 module CSOSave {
   internal  {
-    frame = "765 29 88 56"
+    frame = "205 -3 88 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1104,7 +2069,7 @@ module CSOSave {
   fields  {
     instanceName = CSOSave
     taskVerboseLogging = FALSE
-    fileName = /home/thomas/MIP/ntu_mip/exercise/SoCSOLiveWireEditor/exercise-itk-isoloated-watershed.cso
+    fileName = /home/thomas/MIP/ntu_mip/exercise/SoCSOLiveWireEditor/exercise_roi.cso
     autoApply = TRUE
     saveSuccess = TRUE
     binary = TRUE
@@ -1113,7 +2078,7 @@ module CSOSave {
 }
 module ImageLoad {
   internal  {
-    frame = "201 649 96 64"
+    frame = "305 833 96 64"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -1146,11 +2111,11 @@ module ImageLoad {
 }
 module View2D {
   internal  {
-    frame = "533 425 120 64"
+    frame = "293 417 120 64"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "282 1272 400 400"
+        geometry = "146 1121 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -1211,11 +2176,11 @@ module View2D {
 }
 module View2D {
   internal  {
-    frame = "805 417 120 64"
+    frame = "485 425 120 64"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "1205 1100 400 400"
+        geometry = "1366 1170 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -1276,7 +2241,7 @@ module View2D {
 }
 module SoView2DRectangle {
   internal  {
-    frame = "481 709 144 56"
+    frame = "165 702 144 56"
     moduleGroupName = roi_select
     windows  {
       window _default {
@@ -1310,8 +2275,8 @@ module SoView2DRectangle {
     renderOnSlab = FALSE
     clipToSlice = FALSE
     cursorShape = UNDEFINED_CURSOR
-    startWorldPos = "49.1537017822266 15.8429279327393 0.5"
-    endWorldPos = "127.962120056152 99.1198654174805 0.5"
+    startWorldPos = "51.1848487854004 25.1861934661865 0.5"
+    endWorldPos = "133.649322509766 103.58837890625 0.5"
     blendInside = 0.2
     blendOnto = 0.5
     blendOutside = 0
@@ -1329,12 +2294,12 @@ module SoView2DRectangle {
 }
 module SubImage {
   internal  {
-    frame = "941 685 88 56"
+    frame = "625 678 88 56"
     moduleGroupName = roi_select
     windows  {
       window _default {
-        geometry = "942 236 578 372"
-        sizeHint = "578 372"
+        geometry = "150 924 445 556"
+        sizeHint = "445 556"
         wasOpen = no
       }
     }
@@ -1345,21 +2310,21 @@ module SubImage {
     autoApplyBox = FALSE
     correctForNegativeSubImageExtents = TRUE
     enableBoxClamping = FALSE
-    x = 139.333327886626
-    sx = 362
+    x = 145.090909942867
+    sx = 378
     modifyX = TRUE
-    y = 44.9090870534341
-    sy = 280
+    y = 71.3939342348594
+    sy = 293
     modifyY = TRUE
     z = 0.5
     sz = 0
-    modifyZ = TRUE
+    modifyZ = FALSE
     c = 0
     sc = 0
     modifyC = FALSE
     t = 0
     st = 0
-    modifyT = TRUE
+    modifyT = FALSE
     u = 0
     su = 0
     modifyU = FALSE
@@ -1370,7 +2335,7 @@ module SubImage {
 }
 module WorldVoxelConvert {
   internal  {
-    frame = "677 609 136 64"
+    frame = "361 602 136 64"
     moduleGroupName = roi_select
     windows  {
       window _default {
@@ -1382,14 +2347,14 @@ module WorldVoxelConvert {
   }
   fields  {
     instanceName = startPos
-    voxelX = 139.333327886626
-    voxelY = 44.9090870534341
+    voxelX = 145.090909942867
+    voxelY = 71.3939342348594
     voxelZ = 0.5
-    worldX = 49.1537017822266
-    worldY = 15.8429279327393
+    worldX = 51.1848487854004
+    worldY = 25.1861934661865
     worldZ = 0.5
-    voxelPos = "139.333327886626 44.9090870534341 0.5"
-    worldPos = "49.1537017822266 15.8429279327393 0.5"
+    voxelPos = "145.090909942867 71.3939342348594 0.5"
+    worldPos = "51.1848487854004 25.1861934661865 0.5"
     voxelMode = TRUE
     worldMode = FALSE
     intVoxelCoords = FALSE
@@ -1398,7 +2363,7 @@ module WorldVoxelConvert {
 }
 module WorldVoxelConvert {
   internal  {
-    frame = "717 705 136 64"
+    frame = "401 698 136 64"
     moduleGroupName = roi_select
     windows  {
       window _default {
@@ -1410,14 +2375,14 @@ module WorldVoxelConvert {
   }
   fields  {
     instanceName = endPos
-    voxelX = 362
-    voxelY = 280
+    voxelX = 378
+    voxelY = 293
     voxelZ = 0
-    worldX = 127.962120056152
-    worldY = 99.1198654174805
+    worldX = 133.649322509766
+    worldY = 103.58837890625
     worldZ = 0.5
-    voxelPos = "362 280 0"
-    worldPos = "127.962120056152 99.1198654174805 0.5"
+    voxelPos = "378 293 0"
+    worldPos = "133.649322509766 103.58837890625 0.5"
     voxelMode = TRUE
     worldMode = FALSE
     intVoxelCoords = TRUE
@@ -1426,57 +2391,22 @@ module WorldVoxelConvert {
 }
 module Morphology {
   internal  {
-    frame = "221 309 104 56"
-    moduleGroupName = ""
+    frame = "834 233 96 64"
+    moduleGroupName = fundamental_image_process
     windows  {
       window _default {
-        geometry = "796 942 327 525"
+        geometry = "384 1016 327 525"
         sizeHint = "327 525"
         wasOpen = no
       }
     }
   }
   fields  {
-    instanceName = Morphology1
+    instanceName = dilation
     borderHandling = PadSrcClamp
     fillValue = 0
     referenceExtentMode = Overlap
     filterMode = Dilation
-    kernelX = 5
-    kernelY = 5
-    kernelZ = 1
-    kernelC = 1
-    kernelT = 1
-    kernelU = 1
-    makeSpherical = FALSE
-    intervalMinOfFilteredVoxels = 0
-    intervalMaxOfFilteredVoxels = 1024
-    useIntervalOfFilteredVoxels = FALSE
-    intervalMinOfVoxelsForFiltering = 0
-    intervalMaxOfVoxelsForFiltering = 1024
-    useIntervalOfVoxelsForFiltering = FALSE
-    externalKernel = ""
-    useExternalKernel = FALSE
-  }
-}
-module Morphology {
-  internal  {
-    frame = "217 421 96 56"
-    moduleGroupName = ""
-    windows  {
-      window _default {
-        geometry = "196 113 281 468"
-        sizeHint = "281 468"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = Morphology
-    borderHandling = PadSrcClamp
-    fillValue = 0
-    referenceExtentMode = Overlap
-    filterMode = Erosion
     kernelX = 5
     kernelY = 3
     kernelZ = 1
@@ -1494,32 +2424,44 @@ module Morphology {
     useExternalKernel = FALSE
   }
 }
-module Threshold {
+module Morphology {
   internal  {
-    frame = "213 533 88 56"
-    moduleGroupName = ""
+    frame = "794 329 96 64"
+    moduleGroupName = fundamental_image_process
     windows  {
       window _default {
-        geometry = "377 241 257 279"
-        sizeHint = "230 279"
+        geometry = "274 983 327 525"
+        sizeHint = "327 525"
         wasOpen = no
       }
     }
   }
   fields  {
-    instanceName = Threshold
-    threshold = 40
-    relativeThreshold = FALSE
-    comparisonOperator = Greater
-    conditionTrueWriteValue = UserDef
-    userConditionTrueValue = 255
-    conditionFalseWriteValue = UserDef
-    userConditionFalseValue = 0
+    instanceName = erosion
+    borderHandling = PadSrcClamp
+    fillValue = 0
+    referenceExtentMode = Overlap
+    filterMode = Erosion
+    kernelX = 3
+    kernelY = 4
+    kernelZ = 1
+    kernelC = 1
+    kernelT = 1
+    kernelU = 1
+    makeSpherical = FALSE
+    intervalMinOfFilteredVoxels = 0
+    intervalMaxOfFilteredVoxels = 1024
+    useIntervalOfFilteredVoxels = FALSE
+    intervalMinOfVoxelsForFiltering = 0
+    intervalMaxOfVoxelsForFiltering = 1024
+    useIntervalOfVoxelsForFiltering = FALSE
+    externalKernel = ""
+    useExternalKernel = FALSE
   }
 }
 module SoCSOVisualizationSettings {
   internal  {
-    frame = "773 325 184 56"
+    frame = "440 285 184 56"
     moduleGroupName = CSOLiveWireEditor
     windows  {
       window _default {
@@ -1636,7 +2578,7 @@ module SoCSOVisualizationSettings {
 }
 module SoCSOLiveWireEditor {
   internal  {
-    frame = "597 317 152 56"
+    frame = "264 277 152 56"
     moduleGroupName = CSOLiveWireEditor
     windows  {
       window _default {
@@ -1705,7 +2647,7 @@ module SoCSOLiveWireEditor {
 }
 module SoView2DCSOExtensibleEditor {
   internal  {
-    frame = "669 197 200 56"
+    frame = "336 157 200 56"
     moduleGroupName = CSOLiveWireEditor
     windows  {
       window _default {
@@ -1754,11 +2696,11 @@ module SoView2DCSOExtensibleEditor {
 }
 module CSOManager {
   internal  {
-    frame = "513 253 112 56"
+    frame = "180 213 112 56"
     moduleGroupName = CSOLiveWireEditor
     windows  {
       window _default {
-        geometry = "533 954 811 602"
+        geometry = "1 858 811 602"
         sizeHint = "811 602"
         wasOpen = no
       }
@@ -1831,7 +2773,7 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 1
+    numUndos = 0
     numRedos = 0
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
@@ -1854,19 +2796,19 @@ module CSOManager {
     numSelectedCSOs = 1
     numSelectedGroups = 0
     selectedCSOsGroupIds = ""
-    csoTabSelected = TRUE
+    csoTabSelected = FALSE
     groupTabSelected = FALSE
-    selectionTabSelected = FALSE
+    selectionTabSelected = TRUE
     notificationTabSelected = FALSE
     defaultTabSelected = FALSE
-    csoCommonTabSelected = FALSE
-    csoVisualsTabSelected = TRUE
+    csoCommonTabSelected = TRUE
+    csoVisualsTabSelected = FALSE
     groupCommonTabSelected = TRUE
     groupVisualsTabSelected = FALSE
     groupMiscTabSelected = FALSE
-    notificationControlTabSelected = FALSE
+    notificationControlTabSelected = TRUE
     notificationOutputCSOTabSelected = FALSE
-    notificationOutputGroupTabSelected = TRUE
+    notificationOutputGroupTabSelected = FALSE
     defaultCSOCommonTabSelected = TRUE
     defaultGroupCommonTabSelected = FALSE
     defaultGroupVisualsTabSelected = FALSE
@@ -1875,11 +2817,11 @@ module CSOManager {
 }
 module View2D {
   internal  {
-    frame = "237 57 120 64"
+    frame = "461 -39 120 64"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "224 994 400 400"
+        geometry = "1268 1161 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -1921,7 +2863,7 @@ module View2D {
     useShaders = TRUE
     useManagedInteraction = FALSE
     lutCenter = 0
-    lutWidth = 255
+    lutWidth = 6
     annotationOn = TRUE
     annotationMode = ANNO_MODE_AUTO
     annotationSizeMode = ANNO_SHOW_HIDE
@@ -1939,25 +2881,42 @@ module View2D {
   }
 }
 connections  {
+  CSOSave1.inCSOList = CSOManager3.outCSOList
+  View2D1.inImage = itkIsolatedWatershedImageFilter2.output0
+  View2D1.inInvPreLUT = SoView2DCSOExtensibleEditor1.self
+  SoView2DCSOExtensibleEditor1.inCSOList = CSOManager3.outCSOList
+  SoView2DCSOExtensibleEditor1.inExtensions = SoCSOLiveWireEditor1.self
+  SoView2DCSOExtensibleEditor1.inVisualizationSettings = SoCSOVisualizationSettings1.outVisualizationSettings
+  SoCSOLiveWireEditor1.inputImage = itkIsolatedWatershedImageFilter2.output0
+  average_filter.input0 = dilation.output0
+  Threshold.input0 = SubImage.output0
+  Histogram1.input0 = SubImage.output0
+  SoRenderArea1.children = SoDiagram2D1.self
+  SoDiagram2D1.inCurveList = Histogram1.outputHistogramCurve
+  SoDiagram2D1.inStylePalette = StylePalette1.outStylePalette
+  Histogram.input0 = laplace_edge.output0
+  SoRenderArea.children = SoDiagram2D.self
+  SoDiagram2D.inCurveList = Histogram.outputHistogramCurve
+  SoDiagram2D.inStylePalette = StylePalette0.outStylePalette
+  OtsuThreshold.input0 = SubImage.output0
   isolated_watershed.inImage = exercise_bpm.outImage
   isolated_watershed.inInvPreLUT = SoView2DCSOEditor1.self
   SoView2DCSOEditor1.inCSOList = CSOManager2.outCSOList
-  CSOManager2.inCSOList = LocalCSOLoad1.outCSOList
-  Convolution.input0 = Morphology1.output0
-  SubImage2.input0 = LocalImage1.outImage
+  CSOManager2.inCSOList = CSOLoad_WaterShed.outCSOList
+  laplace_edge.input0 = average_filter.output0
   View2D3.inImage = itkIsolatedWatershedImageFilter2.output0
   View2D3.startSlice = View2D4.startSlice
-  itkIsolatedWatershedImageFilter2.input0 = Convolution.output0
+  itkIsolatedWatershedImageFilter2.input0 = average_filter.output0
   itkIsolatedWatershedImageFilter2.seed1 = SoView2DPosition3.worldPosition
   itkIsolatedWatershedImageFilter2.seed2 = SoView2DPosition2.worldPosition
-  View2D4.inImage = Convolution.output0
+  View2D4.inImage = average_filter.output0
   View2D4.inInvPreLUT = SoView2DPosition3.self
   View2D4.inInvPostLUT = SoView2DPosition2.self
   View2D4.startSlice = View2D3.startSlice
   CSOLiveWired.inImage = exercise_bpm.outImage
   CSOLiveWired.inInvPreLUT = SoView2DCSOEditor.self
   SoView2DCSOEditor.inCSOList = CSOManager1.outCSOList
-  CSOManager1.inCSOList = exercise_cso.outCSOList
+  CSOManager1.inCSOList = CSOLoad_ROI.outCSOList
   CSOSave.inCSOList = CSOManager.outCSOList
   roi_select_win.inImage = out_112.output0
   roi_select_win.inInvPreLUT = SoView2DRectangle.self
@@ -1973,14 +2932,13 @@ connections  {
   startPos.worldPos = SoView2DRectangle.startWorldPos
   endPos.input0 = out_112.output0
   endPos.worldPos = SoView2DRectangle.endWorldPos
-  Morphology1.input0 = Morphology.output0
-  Morphology.input0 = Threshold.output0
-  Threshold.input0 = SubImage.output0
-  SoCSOLiveWireEditor.inputImage = Convolution.output0
+  dilation.input0 = erosion.output0
+  erosion.input0 = OtsuThreshold.output0
+  SoCSOLiveWireEditor.inputImage = laplace_edge.output0
   SoView2DCSOExtensibleEditor.inCSOList = CSOManager.outCSOList
   SoView2DCSOExtensibleEditor.inExtensions = SoCSOLiveWireEditor.self
   SoView2DCSOExtensibleEditor.inVisualizationSettings = SoCSOVisualizationSettings.outVisualizationSettings
-  livewired.inImage = Convolution.output0
+  livewired.inImage = laplace_edge.output0
   livewired.inInvPreLUT = SoView2DCSOExtensibleEditor.self
 }
 networkModel  {
@@ -1990,7 +2948,7 @@ networkModel  {
         uniqueId = 19
         objectName = ""
         parentUniqueId = 0
-        frame = "941 -2 182 149"
+        frame = "602 -31 182 149"
         backgroundColor  {
           r = 252
           g = 242
@@ -2000,7 +2958,7 @@ networkModel  {
         text = "With no explicit cost image, the Live Wire algorithm supports the segmentation of steep image edges, such as the inner wall of the lung."
         titleText = "How To"
         isCollapsed = True
-        titleFrame = "946 3 78 22"
+        titleFrame = "607 -26 78 22"
       }
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 39
@@ -2027,6 +2985,61 @@ networkModel  {
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 81
         objectName = itkIsolatedWaterShed
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 92
+        objectName = LOAD_CSO_SHOW
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 134
+        objectName = fundamental_image_process
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 171
+        objectName = histogram_show
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 151
+        objectName = histogram_show_roi
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 165
+        objectName = CSOSave
         parentUniqueId = 0
         color  {
           r = 45
