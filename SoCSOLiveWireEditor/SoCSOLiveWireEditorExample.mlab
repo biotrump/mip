@@ -2,13 +2,103 @@
 network  {
   watchlist = ""
 }
+module ImageSave {
+  internal  {
+    frame = "1285 -123 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "545 943 457 524"
+        sizeHint = "454 524"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageSave1
+    taskVerboseLogging = FALSE
+    filename = /home/thomas/MIP/ntu_mip/exercise/findContour/binary_watershed.tif
+    format = TIFF
+    comment = MeVisLab
+    allowOverwrite = TRUE
+    autoFilename = FALSE
+    sourceName = /home/thomas/MIP/ntu_mip/exercise/SoCSOLiveWireEditor/out_112.bmp
+    postfix = .result1
+    dicomNameUsed = TRUE
+    dicomMetaHeader = TRUE
+    dicomDerived = TRUE
+    dicomDerivedImageType = "OTHER\\MEVISLAB"
+    dicomDiscardTags = FrameSpecific
+    dicomStoreTimeInfo = None
+    dicomSetWindow = FALSE
+    dicomWindowCenter = 0
+    dicomWindowWidth = 0
+    dicomIgnoreHalfVoxelShift = FALSE
+    tiffCompression = None
+    tiffTileX = 16
+    tiffTileY = 16
+    tiffTileXAuto = FALSE
+    tiffTileYAuto = FALSE
+    saveDicomHeaderOnly = FALSE
+    pngCompression = Default
+    pngInterlaced = FALSE
+    jpegQuality = 75
+    jpegProgressive = FALSE
+  }
+}
+module ImageSave {
+  internal  {
+    frame = "585 -139 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "631 887 457 524"
+        sizeHint = "454 524"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageSave
+    taskVerboseLogging = FALSE
+    filename = /home/thomas/MIP/ntu_mip/exercise/findContour/roi.tif
+    format = TIFF
+    comment = MeVisLab
+    allowOverwrite = TRUE
+    autoFilename = FALSE
+    sourceName = /home/thomas/MIP/ntu_mip/exercise/SoCSOLiveWireEditor/out_112.bmp
+    postfix = .result1
+    dicomNameUsed = TRUE
+    dicomMetaHeader = TRUE
+    dicomDerived = TRUE
+    dicomDerivedImageType = "OTHER\\MEVISLAB"
+    dicomDiscardTags = FrameSpecific
+    dicomStoreTimeInfo = None
+    dicomSetWindow = FALSE
+    dicomWindowCenter = 0
+    dicomWindowWidth = 0
+    dicomIgnoreHalfVoxelShift = FALSE
+    tiffCompression = None
+    tiffTileX = 16
+    tiffTileY = 16
+    tiffTileXAuto = FALSE
+    tiffTileYAuto = FALSE
+    saveDicomHeaderOnly = FALSE
+    pngCompression = Default
+    pngInterlaced = FALSE
+    jpegQuality = 75
+    jpegProgressive = FALSE
+  }
+}
 module CSOSave {
   internal  {
     frame = "1377 805 96 56"
     moduleGroupName = CSOSave
     windows  {
       window _default {
-        geometry = "423 1197 533 173"
+        geometry = "401 1269 533 173"
         sizeHint = "533 173"
         wasOpen = no
       }
@@ -30,7 +120,7 @@ module View2D {
     moduleGroupName = CSOSave
     windows  {
       window _default {
-        geometry = "1407 1172 400 400"
+        geometry = "234 1060 664 505"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -91,11 +181,11 @@ module View2D {
 }
 module CSOManager {
   internal  {
-    frame = "1473 725 112 56"
+    frame = "1537 709 112 56"
     moduleGroupName = CSOSave
     windows  {
       window _default {
-        geometry = "227 854 811 602"
+        geometry = "732 912 811 602"
         sizeHint = "811 602"
         wasOpen = no
       }
@@ -168,7 +258,7 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 1
+    numUndos = 6
     numRedos = 0
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
@@ -451,7 +541,7 @@ module Convolution {
     moduleGroupName = fundamental_image_process
     windows  {
       window _default {
-        geometry = "204 1010 327 190"
+        geometry = "400 1004 327 190"
         sizeHint = "327 190"
         wasOpen = no
       }
@@ -495,7 +585,7 @@ module Threshold {
 }
 module Histogram {
   internal  {
-    frame = "821 821 96 56"
+    frame = "820 819 96 56"
     moduleGroupName = histogram_show_roi
     windows  {
       window _default {
@@ -524,7 +614,7 @@ module Histogram {
 }
 module StylePalette {
   internal  {
-    frame = "921 821 104 56"
+    frame = "920 819 104 56"
     moduleGroupName = histogram_show_roi
     windows  {
       window _default {
@@ -633,11 +723,11 @@ module StylePalette {
 }
 module SoRenderArea {
   internal  {
-    frame = "825 605 120 56"
+    frame = "824 603 120 56"
     moduleGroupName = histogram_show_roi
     windows  {
       window _viewer {
-        geometry = "1040 1069 786 270"
+        geometry = "768 1234 786 270"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -674,7 +764,7 @@ module SoRenderArea {
 }
 module SoDiagram2D {
   internal  {
-    frame = "833 693 120 56"
+    frame = "832 691 120 56"
     moduleGroupName = histogram_show_roi
   }
   fields  {
@@ -682,7 +772,7 @@ module SoDiagram2D {
     minX = 0
     maxX = 195
     minY = 0
-    maxY = 12812
+    maxY = 13176
     scaleX = 1
     scaleY = 1
     autoRangeX = TRUE
@@ -893,7 +983,7 @@ module SoRenderArea {
     moduleGroupName = histogram_show
     windows  {
       window _viewer {
-        geometry = "1391 1134 400 400"
+        geometry = "1422 811 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -938,7 +1028,7 @@ module SoDiagram2D {
     minX = -3
     maxX = 2
     minY = 3
-    maxY = 151380
+    maxY = 152583
     scaleX = 1
     scaleY = 1
     autoRangeX = TRUE
@@ -1012,7 +1102,7 @@ module OtsuThreshold {
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "161 1243 234 122"
+        geometry = "505 997 234 122"
         sizeHint = "234 122"
         wasOpen = no
       }
@@ -1033,8 +1123,8 @@ module LocalCSOLoad {
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "720 1114 480 181"
-        sizeHint = "480 181"
+        geometry = "550 1353 512 181"
+        sizeHint = "512 181"
         wasOpen = no
       }
     }
@@ -1051,7 +1141,7 @@ module View2D {
     moduleGroupName = LOAD_CSO_SHOW
     windows  {
       window _default {
-        geometry = "457 856 400 400"
+        geometry = "647 915 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -1117,7 +1207,7 @@ module LocalImage {
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "720 1129 480 152"
+        geometry = "951 740 480 152"
         sizeHint = "480 152"
         wasOpen = no
       }
@@ -1397,11 +1487,11 @@ module CSOManager {
 }
 module Convolution {
   internal  {
-    frame = "678 137 104 64"
+    frame = "717 161 104 64"
     moduleGroupName = fundamental_image_process
     windows  {
       window _default {
-        geometry = "151 1073 327 303"
+        geometry = "118 908 327 303"
         sizeHint = "327 190"
         wasOpen = no
       }
@@ -1425,7 +1515,7 @@ module View2D {
     moduleGroupName = itkIsolatedWaterShed
     windows  {
       window _default {
-        geometry = "1044 1112 400 400"
+        geometry = "770 1144 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -1520,7 +1610,7 @@ module SoView2DPosition {
     renderOnSlab = FALSE
     clipToSlice = FALSE
     cursorShape = UNDEFINED_CURSOR
-    worldPosition = "88.8839645385742 76.7452011108398 0.5"
+    worldPosition = "101.737182617188 84.0590972900391 0.5"
     drawingModel = DRAWINGMODEL_CROSSHAIRS
     drawingModelSizeUnit = SIZEUNIT_VOXEL
     drawingModelSize = -1
@@ -1547,7 +1637,7 @@ module itkIsolatedWatershedImageFilter {
     moduleGroupName = itkIsolatedWaterShed
     windows  {
       window _default {
-        geometry = "320 908 406 500"
+        geometry = "1310 919 406 500"
         sizeHint = "287 500"
         wasOpen = no
       }
@@ -1566,13 +1656,13 @@ module itkIsolatedWatershedImageFilter {
     upperOutSideMode = MaxValue
     lowerOutSideValue = 0
     upperOutSideValue = 1
-    seed1 = "78.4609832763672 64.4460906982422 0.5"
-    seed2 = "88.8839645385742 76.7452011108398 0.5"
+    seed1 = "90.1400680541992 50.7964363098145 0.5"
+    seed2 = "101.737182617188 84.0590972900391 0.5"
     threshold = 0.01
     isolatedValueTolerance = 0.001
     upperValueLimit = 20
     replaceValue1 = 100
-    replaceValue2 = 125
+    replaceValue2 = 200
     coordinateTolerance = 1e-06
     directionTolerance = 1e-06
   }
@@ -1583,7 +1673,7 @@ module SoView2DPosition {
     moduleGroupName = itkIsolatedWaterShed
     windows  {
       window _default {
-        geometry = "442 747 504 760"
+        geometry = "1025 868 504 760"
         sizeHint = "504 760"
         wasOpen = no
       }
@@ -1613,7 +1703,7 @@ module SoView2DPosition {
     renderOnSlab = FALSE
     clipToSlice = FALSE
     cursorShape = UNDEFINED_CURSOR
-    worldPosition = "78.4609832763672 64.4460906982422 0.5"
+    worldPosition = "90.1400680541992 50.7964363098145 0.5"
     drawingModel = DRAWINGMODEL_CROSSHAIRS
     drawingModelSizeUnit = SIZEUNIT_VOXEL
     drawingModelSize = -1
@@ -1640,7 +1730,7 @@ module View2D {
     moduleGroupName = itkIsolatedWaterShed
     windows  {
       window _default {
-        geometry = "463 1119 400 400"
+        geometry = "364 1150 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -1686,7 +1776,7 @@ module View2D {
     sliceOrigin = "0 0"
     useShaders = TRUE
     useManagedInteraction = FALSE
-    lutCenter = 0
+    lutCenter = 1
     lutWidth = 1
     annotationOn = TRUE
     annotationMode = ANNO_MODE_AUTO
@@ -1710,9 +1800,9 @@ module View2D {
     moduleGroupName = LOAD_CSO_SHOW
     windows  {
       window _default {
-        geometry = "1406 858 400 400"
+        geometry = "1388 921 400 400"
         sizeHint = "400 400"
-        wasOpen = yes
+        wasOpen = no
       }
       window Settings {
         geometry = "507 165 253 545"
@@ -2042,7 +2132,7 @@ module LocalCSOLoad {
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "720 1114 480 181"
+        geometry = "1377 1356 480 181"
         sizeHint = "480 181"
         wasOpen = no
       }
@@ -2060,7 +2150,7 @@ module CSOSave {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "55 872 533 173"
+        geometry = "194 1262 533 173"
         sizeHint = "533 173"
         wasOpen = no
       }
@@ -2078,7 +2168,7 @@ module CSOSave {
 }
 module ImageLoad {
   internal  {
-    frame = "305 833 96 64"
+    frame = "337 825 96 64"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -2111,11 +2201,11 @@ module ImageLoad {
 }
 module View2D {
   internal  {
-    frame = "293 417 120 64"
+    frame = "285 417 120 64"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "146 1121 400 400"
+        geometry = "268 841 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -2176,11 +2266,11 @@ module View2D {
 }
 module View2D {
   internal  {
-    frame = "485 425 120 64"
+    frame = "501 417 120 64"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "1366 1170 400 400"
+        geometry = "679 842 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -2241,12 +2331,12 @@ module View2D {
 }
 module SoView2DRectangle {
   internal  {
-    frame = "165 702 144 56"
+    frame = "188 709 144 56"
     moduleGroupName = roi_select
     windows  {
       window _default {
-        geometry = "1264 515 409 543"
-        sizeHint = "409 543"
+        geometry = "434 901 472 563"
+        sizeHint = "472 563"
         wasOpen = no
       }
     }
@@ -2275,8 +2365,8 @@ module SoView2DRectangle {
     renderOnSlab = FALSE
     clipToSlice = FALSE
     cursorShape = UNDEFINED_CURSOR
-    startWorldPos = "51.1848487854004 25.1861934661865 0.5"
-    endWorldPos = "133.649322509766 103.58837890625 0.5"
+    startWorldPos = "48.7474708557129 24.3737354278564 0.5"
+    endWorldPos = "131.618179321289 103.182151794434 0.5"
     blendInside = 0.2
     blendOnto = 0.5
     blendOutside = 0
@@ -2285,7 +2375,7 @@ module SoView2DRectangle {
     lineBlendOutside = 0
     resetToImage = FALSE
     selectOutside = FALSE
-    allowDrag = FALSE
+    allowDrag = TRUE
     cooperative = FALSE
     shadeExterior = 0
     shadeAllExterior = FALSE
@@ -2294,7 +2384,7 @@ module SoView2DRectangle {
 }
 module SubImage {
   internal  {
-    frame = "625 678 88 56"
+    frame = "648 685 88 56"
     moduleGroupName = roi_select
     windows  {
       window _default {
@@ -2310,21 +2400,21 @@ module SubImage {
     autoApplyBox = FALSE
     correctForNegativeSubImageExtents = TRUE
     enableBoxClamping = FALSE
-    x = 145.090909942867
-    sx = 378
+    x = 138.181807150052
+    sx = 373
     modifyX = TRUE
-    y = 71.3939342348594
-    sy = 293
+    y = 69.0909035750261
+    sy = 292
     modifyY = TRUE
     z = 0.5
     sz = 0
-    modifyZ = FALSE
+    modifyZ = TRUE
     c = 0
     sc = 0
     modifyC = FALSE
     t = 0
     st = 0
-    modifyT = FALSE
+    modifyT = TRUE
     u = 0
     su = 0
     modifyU = FALSE
@@ -2335,26 +2425,26 @@ module SubImage {
 }
 module WorldVoxelConvert {
   internal  {
-    frame = "361 602 136 64"
+    frame = "384 609 136 64"
     moduleGroupName = roi_select
     windows  {
       window _default {
-        geometry = "443 522 408 254"
-        sizeHint = "408 254"
+        geometry = "1171 797 460 251"
+        sizeHint = "460 251"
         wasOpen = no
       }
     }
   }
   fields  {
     instanceName = startPos
-    voxelX = 145.090909942867
-    voxelY = 71.3939342348594
+    voxelX = 138.181807150052
+    voxelY = 69.0909035750261
     voxelZ = 0.5
-    worldX = 51.1848487854004
-    worldY = 25.1861934661865
+    worldX = 48.7474708557129
+    worldY = 24.3737354278564
     worldZ = 0.5
-    voxelPos = "145.090909942867 71.3939342348594 0.5"
-    worldPos = "51.1848487854004 25.1861934661865 0.5"
+    voxelPos = "138.181807150052 69.0909035750261 0.5"
+    worldPos = "48.7474708557129 24.3737354278564 0.5"
     voxelMode = TRUE
     worldMode = FALSE
     intVoxelCoords = FALSE
@@ -2363,26 +2453,26 @@ module WorldVoxelConvert {
 }
 module WorldVoxelConvert {
   internal  {
-    frame = "401 698 136 64"
+    frame = "424 705 136 64"
     moduleGroupName = roi_select
     windows  {
       window _default {
-        geometry = "439 717 408 254"
-        sizeHint = "408 254"
+        geometry = "265 1210 460 251"
+        sizeHint = "460 251"
         wasOpen = no
       }
     }
   }
   fields  {
     instanceName = endPos
-    voxelX = 378
-    voxelY = 293
+    voxelX = 373
+    voxelY = 292
     voxelZ = 0
-    worldX = 133.649322509766
-    worldY = 103.58837890625
+    worldX = 131.618179321289
+    worldY = 103.182151794434
     worldZ = 0.5
-    voxelPos = "378 293 0"
-    worldPos = "133.649322509766 103.58837890625 0.5"
+    voxelPos = "373 292 0"
+    worldPos = "131.618179321289 103.182151794434 0.5"
     voxelMode = TRUE
     worldMode = FALSE
     intVoxelCoords = TRUE
@@ -2391,11 +2481,11 @@ module WorldVoxelConvert {
 }
 module Morphology {
   internal  {
-    frame = "834 233 96 64"
+    frame = "841 209 96 64"
     moduleGroupName = fundamental_image_process
     windows  {
       window _default {
-        geometry = "384 1016 327 525"
+        geometry = "240 839 327 525"
         sizeHint = "327 525"
         wasOpen = no
       }
@@ -2430,7 +2520,7 @@ module Morphology {
     moduleGroupName = fundamental_image_process
     windows  {
       window _default {
-        geometry = "274 983 327 525"
+        geometry = "562 916 327 525"
         sizeHint = "327 525"
         wasOpen = no
       }
@@ -2582,7 +2672,7 @@ module SoCSOLiveWireEditor {
     moduleGroupName = CSOLiveWireEditor
     windows  {
       window _default {
-        geometry = "779 906 404 598"
+        geometry = "214 924 404 598"
         sizeHint = "362 598"
         wasOpen = no
       }
@@ -2700,7 +2790,7 @@ module CSOManager {
     moduleGroupName = CSOLiveWireEditor
     windows  {
       window _default {
-        geometry = "1 858 811 602"
+        geometry = "114 986 811 602"
         sizeHint = "811 602"
         wasOpen = no
       }
@@ -2796,13 +2886,13 @@ module CSOManager {
     numSelectedCSOs = 1
     numSelectedGroups = 0
     selectedCSOsGroupIds = ""
-    csoTabSelected = FALSE
+    csoTabSelected = TRUE
     groupTabSelected = FALSE
-    selectionTabSelected = TRUE
+    selectionTabSelected = FALSE
     notificationTabSelected = FALSE
     defaultTabSelected = FALSE
-    csoCommonTabSelected = TRUE
-    csoVisualsTabSelected = FALSE
+    csoCommonTabSelected = FALSE
+    csoVisualsTabSelected = TRUE
     groupCommonTabSelected = TRUE
     groupVisualsTabSelected = FALSE
     groupMiscTabSelected = FALSE
@@ -2821,7 +2911,7 @@ module View2D {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "1268 1161 400 400"
+        geometry = "1086 842 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -2866,7 +2956,7 @@ module View2D {
     lutWidth = 6
     annotationOn = TRUE
     annotationMode = ANNO_MODE_AUTO
-    annotationSizeMode = ANNO_SHOW_HIDE
+    annotationSizeMode = ANNO_SHOW_DETAILED
     annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
     annotationFontSize = ANNO_SIZE_AUTO
     annoCoords = Voxel
@@ -2881,6 +2971,8 @@ module View2D {
   }
 }
 connections  {
+  ImageSave1.input0 = itkIsolatedWatershedImageFilter2.output0
+  ImageSave.input0 = laplace_edge.output0
   CSOSave1.inCSOList = CSOManager3.outCSOList
   View2D1.inImage = itkIsolatedWatershedImageFilter2.output0
   View2D1.inInvPreLUT = SoView2DCSOExtensibleEditor1.self

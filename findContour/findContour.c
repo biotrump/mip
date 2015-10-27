@@ -315,13 +315,11 @@ int main (int argc, char * argv[]) {
 		
 		//Finally, display the image in the window.
 		cvShowImage(MAIN_WINNAME, small_image);
-		
-		//draw the max contour on the original
-		cvDrawContours(frame_org, (CvSeq *)max_contour, CV_RGB(0, 255,0), CV_RGB(0,200,0), 
-					   0, 1, CV_AA, cvPoint(roi_x,roi_y));		
-		cvShowImage(orgFile, frame_org);
-		
-		if(camID < 0){
+		if(camID< 0){
+			//draw the max contour on the original
+			cvDrawContours(frame_org, (CvSeq *)max_contour, CV_RGB(0, 255,0), CV_RGB(0,200,0), 
+						0, 1, CV_AA, cvPoint(roi_x,roi_y));		
+			cvShowImage(orgFile, frame_org);
 			c=cvWaitKey(0); //Wait 30 ms for the user to press a key.
 			//Respond to key pressed.
 			if(c == 27) quit = 1; //Get out of loop
