@@ -1,0 +1,627 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module Histogram {
+  internal  {
+    frame = "578 301 96 56"
+    moduleGroupName = show_histogram
+    windows  {
+      window _default {
+        geometry = "41 203 431 206"
+        sizeHint = "431 206"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Histogram1
+    useMask = FALSE
+    xRange = "Dynamic Min/Max"
+    maskMode = Labels
+    curveType = Line
+    curveStyle = 0
+    curveTitle = ""
+    updateMode = AutoUpdate
+    useStepFunction = FALSE
+    useBinSizeOneRepresentation = TRUE
+    useBackgroundValue = FALSE
+    backgroundValue = 0
+    binSize = 1
+    maxBinCount = 25000000
+  }
+}
+module StylePalette {
+  internal  {
+    frame = "686 301 104 56"
+    moduleGroupName = show_histogram
+    windows  {
+      window _default {
+        geometry = "70 89 632 433"
+        sizeHint = "632 433"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = StylePalette0
+    color1 = "1 1 0"
+    color2 = "1 0 0"
+    color3 = "0 0 1"
+    color4 = "0 1 0"
+    color5 = "1 0.5 0"
+    color6 = "1 0 1"
+    color7 = "0 1 1"
+    color8 = "0.5 1 0.5"
+    color9 = "1 0 0.5"
+    color10 = "0.5 1 0"
+    color11 = "0.5 0 1"
+    color12 = "0 1 0.5"
+    lineStyle1 = Solid
+    lineStyle2 = Solid
+    lineStyle3 = Solid
+    lineStyle4 = Solid
+    lineStyle5 = Solid
+    lineStyle6 = Solid
+    lineStyle7 = Solid
+    lineStyle8 = Solid
+    lineStyle9 = Solid
+    lineStyle10 = Solid
+    lineStyle11 = Solid
+    lineStyle12 = Solid
+    lineWidth1 = 1
+    lineWidth2 = 1
+    lineWidth3 = 1
+    lineWidth4 = 1
+    lineWidth5 = 1
+    lineWidth6 = 1
+    lineWidth7 = 1
+    lineWidth8 = 1
+    lineWidth9 = 1
+    lineWidth10 = 1
+    lineWidth11 = 1
+    lineWidth12 = 1
+    markerType1 = None
+    markerType2 = None
+    markerType3 = None
+    markerType4 = None
+    markerType5 = None
+    markerType6 = None
+    markerType7 = None
+    markerType8 = None
+    markerType9 = None
+    markerType10 = None
+    markerType11 = None
+    markerType12 = None
+    markerSize1 = 10
+    markerSize2 = 10
+    markerSize3 = 10
+    markerSize4 = 10
+    markerSize5 = 10
+    markerSize6 = 10
+    markerSize7 = 10
+    markerSize8 = 10
+    markerSize9 = 10
+    markerSize10 = 10
+    markerSize11 = 10
+    markerSize12 = 10
+    antiAlias1 = FALSE
+    antiAlias2 = FALSE
+    antiAlias3 = FALSE
+    antiAlias4 = FALSE
+    antiAlias5 = FALSE
+    antiAlias6 = FALSE
+    antiAlias7 = FALSE
+    antiAlias8 = FALSE
+    antiAlias9 = FALSE
+    antiAlias10 = FALSE
+    antiAlias11 = FALSE
+    antiAlias12 = FALSE
+    name1 = ""
+    name2 = ""
+    name3 = ""
+    name4 = ""
+    name5 = ""
+    name6 = ""
+    name7 = ""
+    name8 = ""
+    name9 = ""
+    name10 = ""
+    name11 = ""
+    name12 = ""
+    currentStyle = 0
+    currentColor = "1 1 1"
+    currentLineStyle = None
+    currentLineWidth = 1
+    currentMarkerType = None
+    currentMarkerSize = 4
+    currentAntiAlias = FALSE
+    currentName = ""
+    reservedEntries = 1
+  }
+}
+module SoRenderArea {
+  internal  {
+    frame = "618 141 112 56"
+    moduleGroupName = show_histogram
+    windows  {
+      window _viewer {
+        geometry = "872 412 486 193"
+        sizeHint = "400 400"
+        wasOpen = yes
+      }
+    }
+  }
+  fields  {
+    instanceName = SoRenderArea
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = DELAYED_BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    hiResRendering = TRUE
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+  }
+}
+module SoDiagram2D {
+  internal  {
+    frame = "618 213 112 56"
+    moduleGroupName = show_histogram
+    windows  {
+      window _default {
+        geometry = "437 140 506 548"
+        sizeHint = "506 548"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoDiagram2D
+    minX = 0
+    maxX = 255
+    minY = 6
+    maxY = 34972
+    scaleX = 1
+    scaleY = 1
+    autoRangeX = TRUE
+    autoRangeY = TRUE
+    axisColor = "1 1 1"
+    axisRotation = AXIS_ROTATION_LEFT_BOTTOM
+    titleFontHeight = 14
+    drawDiagramTitle = FALSE
+    diagramTitleString = ""
+    drawGrid = FALSE
+    gridColor = "0.349999994039536 0.349999994039536 0.349999994039536"
+    drawLegend = FALSE
+    legendPlacement = LEGEND_UPPER_RIGHT
+    legendFontHeight = 12
+    autoLimitLegendFontHeight = FALSE
+    zoomAnimationEase = 0.5
+    zoomAnimationEpsilon = 0.0099999998
+    useZoomRestrictions = FALSE
+    minZoomFactor = 0.1
+    maxZoomFactor = 10
+    drawChildrenExtensions = TRUE
+    forwardEventsToChildrenExtensions = TRUE
+    changeLineOpacityForHighlightedCurves = FALSE
+    curveLineOpacityHighlighted = 1
+    changeAreaOpacityForHighlightedCurves = FALSE
+    curveAreaOpacityHighlighted = 1
+    changeLineOpacityForNotHighlightedCurves = FALSE
+    curveLineOpacityNotHighlighted = 0.30000001
+    changeAreaOpacityForNotHighlightedCurves = FALSE
+    curveAreaOpacityNotHighlighted = 0.30000001
+    changeLineStyleForHighlightedCurves = FALSE
+    curveLineStyleHighlighted = 1
+    changeLineStyleForNotHighlightedCurves = FALSE
+    curveLineStyleNotHighlighted = 1
+    curveIndexHighlighted = ""
+    reorderHighlightedCurves = FALSE
+    borderH = 46
+    borderV = 27
+    autoBorderH = TRUE
+    autoBorderV = TRUE
+    drawAxisX = TRUE
+    drawAxisY = TRUE
+    drawTicksX = TRUE
+    drawTicksY = TRUE
+    drawLabelsX = TRUE
+    drawLabelsY = TRUE
+    drawAxisTitleX = FALSE
+    drawAxisTitleY = FALSE
+    axisTitleStringX = "X [dn]"
+    axisTitleStringY = "Y [dn]"
+    axisTitleFontHeightX = 12
+    axisTitleFontHeightY = 12
+    axisLabelFontHeightX = 12
+    axisLabelFontHeightY = 12
+    tickMinDistance = 30
+    curveColor = "1 1 1"
+    lineStyle = LINE_STYLE_SOLID
+    markerType = MARKER_TYPE_NONE
+    markerSize = 10
+    lineWidth = 1
+    antiAlias = TRUE
+    areaOpacity = 0.5
+    lineOpacity = 1
+    stylePaletteMode = STYLE_PALETTE_INDEX
+  }
+}
+module View2D {
+  internal  {
+    frame = "341 57 120 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "612 168 221 180"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Viewer {
+        geometry = "158 159 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "194 140 632 547"
+        sizeHint = "234 545"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D_Blue
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 127.5
+    lutWidth = 255
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "189 57 120 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "204 187 194 192"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Viewer {
+        geometry = "158 159 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "194 140 632 547"
+        sizeHint = "234 545"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D_Green
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 127.5
+    lutWidth = 255
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module ColorMatrix {
+  internal  {
+    frame = "337 281 112 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "559 153 490 175"
+        sizeHint = "490 175"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ColorMatrix_B
+    dimensionSelect = 1D
+    matrix00 = 0
+    matrix01 = 0
+    matrix02 = 1
+    matrix03 = 0
+    matrix10 = 0
+    matrix11 = 1
+    matrix12 = 0
+    matrix13 = 0
+    matrix20 = 1
+    matrix21 = 0
+    matrix22 = 0
+    matrix23 = 0
+    matrix30 = 0
+    matrix31 = 0
+    matrix32 = 0
+    matrix33 = 1
+    autoApply = TRUE
+  }
+}
+module ColorMatrix {
+  internal  {
+    frame = "153 217 112 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "118 323 490 175"
+        sizeHint = "490 175"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ColorMatrix_G
+    dimensionSelect = 1D
+    matrix00 = 0
+    matrix01 = 1
+    matrix02 = 0
+    matrix03 = 0
+    matrix10 = 0
+    matrix11 = 1
+    matrix12 = 0
+    matrix13 = 0
+    matrix20 = 1
+    matrix21 = 0
+    matrix22 = 0
+    matrix23 = 0
+    matrix30 = 0
+    matrix31 = 0
+    matrix32 = 0
+    matrix33 = 1
+    autoApply = TRUE
+  }
+}
+module ColorMatrix {
+  internal  {
+    frame = "9 233 112 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "20 114 490 175"
+        sizeHint = "490 175"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ColorMatrix_R
+    dimensionSelect = 1D
+    matrix00 = 1
+    matrix01 = 0
+    matrix02 = 0
+    matrix03 = 0
+    matrix10 = 0
+    matrix11 = 1
+    matrix12 = 0
+    matrix13 = 0
+    matrix20 = 1
+    matrix21 = 0
+    matrix22 = 0
+    matrix23 = 0
+    matrix30 = 0
+    matrix31 = 0
+    matrix32 = 0
+    matrix33 = 1
+    autoApply = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "21 57 120 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "194 161 196 174"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Viewer {
+        geometry = "158 159 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "194 140 632 547"
+        sizeHint = "234 545"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D_Red
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 127.5
+    lutWidth = 255
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module LocalImage {
+  internal  {
+    frame = "105 385 144 64"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "450 345 480 138"
+        sizeHint = "480 138"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalImage_tif
+    name = $(NETWORK)/32_training.tif
+    autoLoad = TRUE
+  }
+}
+connections  {
+  Histogram1.input0 = ColorMatrix_G.output0
+  SoRenderArea.children = SoDiagram2D.self
+  SoDiagram2D.inCurveList = Histogram1.outputHistogramCurve
+  SoDiagram2D.inStylePalette = StylePalette0.outStylePalette
+  View2D_Blue.inImage = ColorMatrix_B.output0
+  View2D_Green.inImage = ColorMatrix_G.output0
+  ColorMatrix_B.input0 = LocalImage_tif.outImage
+  ColorMatrix_G.input0 = LocalImage_tif.outImage
+  ColorMatrix_R.input0 = LocalImage_tif.outImage
+  View2D_Red.inImage = ColorMatrix_R.output0
+}
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 31
+        objectName = show_histogram
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+    }
+  }
+}

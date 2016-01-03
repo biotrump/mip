@@ -1,0 +1,482 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module View2D {
+  internal  {
+    frame = "325 109 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "572 172 348 341"
+        sizeHint = "400 400"
+        wasOpen = yes
+      }
+      window Viewer {
+        geometry = "158 159 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "194 140 632 547"
+        sizeHint = "234 545"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D_Blue
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 127.5
+    lutWidth = 255
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "189 101 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "372 256 306 292"
+        sizeHint = "400 400"
+        wasOpen = yes
+      }
+      window Viewer {
+        geometry = "158 159 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "194 140 632 547"
+        sizeHint = "234 545"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D_Green
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 127.5
+    lutWidth = 255
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module ColorMatrix {
+  internal  {
+    frame = "301 237 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "522 298 490 175"
+        sizeHint = "490 175"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ColorMatrix_B
+    dimensionSelect = 1D
+    matrix00 = 0
+    matrix01 = 0
+    matrix02 = 1
+    matrix03 = 0
+    matrix10 = 0
+    matrix11 = 1
+    matrix12 = 0
+    matrix13 = 0
+    matrix20 = 1
+    matrix21 = 0
+    matrix22 = 0
+    matrix23 = 0
+    matrix30 = 0
+    matrix31 = 0
+    matrix32 = 0
+    matrix33 = 1
+    autoApply = TRUE
+  }
+}
+module ColorMatrix {
+  internal  {
+    frame = "165 245 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "309 436 490 175"
+        sizeHint = "490 175"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ColorMatrix_G
+    dimensionSelect = 1D
+    matrix00 = 0
+    matrix01 = 1
+    matrix02 = 0
+    matrix03 = 0
+    matrix10 = 0
+    matrix11 = 1
+    matrix12 = 0
+    matrix13 = 0
+    matrix20 = 1
+    matrix21 = 0
+    matrix22 = 0
+    matrix23 = 0
+    matrix30 = 0
+    matrix31 = 0
+    matrix32 = 0
+    matrix33 = 1
+    autoApply = TRUE
+  }
+}
+module ColorMatrix {
+  internal  {
+    frame = "37 237 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "127 443 490 175"
+        sizeHint = "490 175"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ColorMatrix_R
+    dimensionSelect = 1D
+    matrix00 = 1
+    matrix01 = 0
+    matrix02 = 0
+    matrix03 = 0
+    matrix10 = 0
+    matrix11 = 1
+    matrix12 = 0
+    matrix13 = 0
+    matrix20 = 1
+    matrix21 = 0
+    matrix22 = 0
+    matrix23 = 0
+    matrix30 = 0
+    matrix31 = 0
+    matrix32 = 0
+    matrix33 = 1
+    autoApply = TRUE
+  }
+}
+module ImagePropertyConvert {
+  internal  {
+    frame = "733 253 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "526 110 329 609"
+        sizeHint = "329 609"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImagePropertyConvert
+    changeDimensionInfo = FALSE
+    cDimInfo = ""
+    tDimInfo = ""
+    uDimInfo = ""
+    a00 = 1
+    a01 = 0
+    a02 = 0
+    a03 = 0
+    a10 = 0
+    a11 = 1
+    a12 = 0
+    a13 = 0
+    a20 = 0
+    a21 = 0
+    a22 = 1
+    a23 = 0
+    a30 = 0
+    a31 = 0
+    a32 = 0
+    a33 = 1
+    worldMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    changeDatatype = FALSE
+    datatype = "unsigned int8"
+    changePageSize = FALSE
+    pageSizeX = 32
+    pageSizeY = 32
+    pageSizeZ = 1
+    pageSizeC = 1
+    pageSizeT = 1
+    pageSizeU = 1
+    changeMinGreyvalue = FALSE
+    minGreyvalue = 0
+    changeMaxGreyvalue = FALSE
+    maxGreyvalue = 1
+    changeWorldMatrix = FALSE
+    voxelSizeX = 1
+    voxelSizeY = 1
+    voxelSizeZ = 1
+    autoApply = TRUE
+  }
+}
+module LocalImage {
+  internal  {
+    frame = "477 345 152 64"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "450 345 480 138"
+        sizeHint = "480 138"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalImage_ppm
+    name = $(NETWORK)/im0401.ppm
+    autoLoad = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "541 181 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "709 116 528 503"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D1
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 127.5
+    lutWidth = 255
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module View2D {
+  internal  {
+    frame = "53 101 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "39 199 261 176"
+        sizeHint = "400 400"
+        wasOpen = yes
+      }
+      window Viewer {
+        geometry = "158 159 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "194 140 632 547"
+        sizeHint = "234 545"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D_Red
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 0
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 127.5
+    lutWidth = 255
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = FALSE
+    hiResRendering = TRUE
+  }
+}
+module LocalImage {
+  internal  {
+    frame = "105 385 144 64"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "450 345 480 138"
+        sizeHint = "480 138"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LocalImage_tif
+    name = $(NETWORK)/32_training.tif
+    autoLoad = TRUE
+  }
+}
+connections  {
+  View2D_Blue.inImage = ColorMatrix_B.output0
+  View2D_Green.inImage = ColorMatrix_G.output0
+  ColorMatrix_B.input0 = LocalImage_tif.outImage
+  ColorMatrix_G.input0 = LocalImage_tif.outImage
+  ColorMatrix_R.input0 = LocalImage_tif.outImage
+  View2D1.inImage = LocalImage_ppm.outImage
+  View2D_Red.inImage = ColorMatrix_R.output0
+}
+networkModel = ""
